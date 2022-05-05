@@ -1,0 +1,62 @@
+:root {
+    font-size: 20px;
+    
+    --font-primary: "Segoe UI", sans-serif;
+    --font-secondary: Arial, serif;
+    --colour-bg-desktop: white;
+    --colour-bg-mobile: #BB9C8E;
+    --colour-bg-header:#383428;
+    --colour-bg-footer:#383428;
+    --colour-text: #C6C6C6;
+}
+    
+body {
+    font-family: var(--font-primary);
+    background-color: var(--colour-bg-desktop);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: var(--colour-text);
+}
+
+.header_nav a {
+    text-decoration: none;
+    color: var(--colour-text);
+}
+
+.header_nav a:active,
+.header_nav a:hover {
+    color: white;
+}
+
+nav {
+    background-color: var(--colour-bg-header);
+    height: 100px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav > * {
+    margin: 0.5rem;
+    list-style-type: none;
+}
+
+.header_login a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #F9943B;
+}
+
+.header_nav {
+    margin-left: 140px;
+}
+
+.social_icons {
+    margin-right: 140px;
+}

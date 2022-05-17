@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Icon_feather-shopping-cart" data-name="Icon feather-shopping-cart" transform="translate(-0.5 -0.5)">
+    <path id="route_17" data-name="route 17" d="M15,31.5A1.5,1.5,0,1,1,13.5,30,1.5,1.5,0,0,1,15,31.5Z" transform="translate(-1.05 -1.5)" fill="none" stroke="#ce4a0e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="route_18" data-name="route 18" d="M31.5,31.5A1.5,1.5,0,1,1,30,30,1.5,1.5,0,0,1,31.5,31.5Z" transform="translate(-3 -1.5)" fill="none" stroke="#ce4a0e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="route_19" data-name="route 19" d="M1.5,1.5H6.955l3.655,17.853A2.714,2.714,0,0,0,13.336,21.5H26.591a2.714,2.714,0,0,0,2.727-2.147L31.5,8.167H8.318" fill="none" stroke="#ce4a0e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

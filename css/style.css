@@ -22,7 +22,7 @@ body {
 button {
     cursor: pointer;
     border: none;
-    box-shadow: 2px 2px 2px var(--colour-bg-mobile);
+    box-shadow: 0px 3px 1px var(--colour-bg-mobile);
 }
 
 /* nav-bar mobile version */
@@ -36,7 +36,7 @@ button {
     height: 100px;
 }
 
-.mobile_logo {
+.logo_mobile {
     background-color: white;
     width: 80px;
     height: 60px;
@@ -44,7 +44,7 @@ button {
     margin: 20px 5px 0;
 }
 
-.mobile_logo > img {
+.logo_mobile > img {
     width: 80px;
     height: 50px;
     margin: 10px auto;
@@ -59,6 +59,13 @@ button {
     height: 50px;
     border-radius: 10px;
     margin: 20px 5px 0;
+}
+
+.home_bnt:hover,
+.cart_bnt:hover,
+.wish_list_bnt:hover,
+.login_bnt:hover {
+    background-color: var(--colour-main);
 }
 
 .home_bnt > img,
@@ -93,6 +100,7 @@ button {
 .search {
     width: 300px;
     height: 40px;
+    outline: none;
     border-radius: 18px;
     border: 1px solid #ccc;
     text-indent: 10px;
@@ -114,12 +122,144 @@ button {
     clear: both;
 }
 
+/* footer */
+footer {
+    background-color: var(--colour-bg-footer);
+}
 
+.footer_logo_mobile,
+.footer_logo_desktop {
+    margin: auto;
+    border-radius: 0;
+    background: none;
+}
+
+.footer_logo_mobile > img,
+.footer_logo_desktop > img {
+    margin-top: 20px;
+}
+
+.footer_logo_desktop > img {
+    margin-bottom: -100px;
+}
+
+.info_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+/* Newsletter + Find Us + About Us + Categories + Customer service*/
+.newsletter,
+.sunscribe_bar {
+    width: 295px;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.sunscribe_bar > span,
+.findus > span,
+.aboutus > span,
+.categories > span,
+.customerservice > span {
+    font-family: var(--font-primary);
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--colour-main);
+    margin: 5px 40px;
+}
+
+.subscribe_enter,
+.subscribe_bnt {
+    width: 295px;
+    height: 30px;
+    outline: none;
+    border: 2px solid var(--colour-text);
+    border-radius: 5px;
+    margin: 5px 40px;
+}
+
+.subscribe_bnt {
+    width: 303px;
+    border: 2px solid #CE4A0E;
+    background-color: #CE4A0E;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Find Us + About Us + Categories + Customer service*/
+.findus,
+.aboutus,
+.categories,
+.customerservice {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.findus_list > li,
+.aboutus_list > li,
+.categories_list > li,
+.customer_service_list > li {
+    list-style: none;
+    margin: 10px auto;
+    display: flex;
+    color: white;
+    font-family: var(--font-secondary);
+    font-size: 14px;
+}
+
+.location > img,
+.phone > img,
+.mail > img,
+.open_time > img {
+    margin-right: 15px;
+}
+
+/* footer_social_icons */
+.footer_social_icons {
+    text-align: right;
+    border-bottom: 1px solid;
+    margin: auto 40px;
+}
+
+.foot_icon {
+    margin: 30px 12px;
+}
+
+/* copyright + payment method*/
+.copyright_contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.copyright {
+    text-align: left;
+    margin: 30px 40px 0 40px;
+}
+
+.copyright > span {
+    color: var(--colour-main);
+}
+
+.payment_method {
+    text-align: left;
+    margin: 20px 20px 20px 20px;
+}
+
+.payment_method > img {
+    width: 80px;
+    height: 50px;
+}
 
 /* desktop version */
 @media screen and (min-width:1750px ) {
     /* nav-bar */
-    .nav_mobile {
+    .nav_mobile,
+    .logo_mobile {
         display: none;
     }
 

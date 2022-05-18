@@ -3,7 +3,7 @@
     --font-primary: "Segoe UI", sans-serif;
     --font-secondary: Arial, serif;
     --colour-bg-desktop: white;
-    --colour-bg-mobile: #BB9C8E;
+    --colour-nav-mobile: #BB9C8E;
     --colour-bg-header:#383428;
     --colour-bg-footer:#383428;
     --colour-text: #C6C6C6;
@@ -22,7 +22,7 @@ body {
 button {
     cursor: pointer;
     border: none;
-    box-shadow: 0px 3px 1px var(--colour-bg-mobile);
+    box-shadow: 0px 3px 1px var(--colour-nav-mobile);
 }
 
 /* nav-bar mobile version */
@@ -122,88 +122,134 @@ button {
 }
 
 /* hamburger menu */
-/* .logo_bar {
+.logo_bar {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: row;
-    align-items: baseline;
-} */
-
-#ham_menu {
-    -webkit-user-select: none;
-    user-select: none;
-    z-index: 1;
+    flex-direction: row;  
 }
 
-#ham_menu input {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    /* opacity: 0; */
-    z-index: 2;
-    margin: 40px 0;
-    -webkit-touch-callout: none;
+#ham_icon {
+    height: 42px;
+    width: 42px;
+    margin: 40px 25px;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    background: none;
 }
 
-#ham_menu span {
+#ham_icon span {
     display: block;
-    width: 40px;
+    width: 42px;
     height: 4px;
-    margin-bottom: 5px;
-    background: var(--colour-main);
-    border-radius: 3px;
-    z-index: 1;
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-        opacity 0.55s ease;
+    background-color: var(--colour-main);
+    margin: 5px auto;
+    border-radius: 5px;
 }
 
-#ham_menu span:first-child {
-    transform-origin: 0% 0%;
+#ham_menu_detail {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30vw;
+    background: var(--colour-nav-mobile);
+    text-align: left;
 }
 
-#ham_menu span:nth-last-child(2) {
-    transform-origin: 0% 100%;
+@media screen and (max-width:700px ){
+    #ham_menu_detail {
+        width: 60vw;
+    }
 }
 
-#ham_menu input:checked~span {
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
-}
-
-/*
-* But let's hide the middle one.
-*/
-#ham_menu input:checked~span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
-* Ohyeah and the last one should go the other direction
-*/
-#ham_menu input:checked~span:nth-last-child(2) {
-    transform: rotate(-45deg) translate(0, -1px);
-}
-
-
-#ham_menu a {
+#ham_menu_detail a {
     text-decoration: none;
-    color: #232323;
-
+    color: var(--colour-bg-header);
     transition: color 0.3s ease;
 }
 
-#ham_menu a:hover {
-    color: var(--colour-main);
+.nav_title,
+#category_list a {
+    margin: 15px auto;
+    margin-right: 20px;
+    border-bottom: 2px solid var(--colour-text);
 }
 
-#ham_menu input:checked~ul {
-    transform: none;
+#ham_menu_detail a:hover {
+    color: var(--colour-main)
 }
+
+#close_icon {
+    height: 42px;
+    width: 42px;
+    margin-top: 20px;
+    border: none;
+    box-shadow: none;
+    background: none;
+    margin-left: 15px;
+}
+
+#close_icon span {
+    display: block;
+    width: 42px;
+    height: 4px;
+    background-color: var(--colour-main);
+    margin: 5px auto;
+    border-radius: 5px;
+    transform-origin: 15px 0px;
+}
+
+#close_icon span:first-child {
+    transform: rotate(45deg);
+} 
+
+#close_icon span:last-child {
+    transform: rotate(-45deg);
+} 
+
+#ham_menu_list {
+    margin-bottom: 50px;
+}
+
+#category_list {
+    display: none;
+}
+
+
+.nav_title li,
+#category_list li {
+    list-style: none;
+    font-family: var(--font-primary);
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#category_list li {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.nav_title a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.nav_title img {
+    height: 15px;
+    margin: auto 10px;
+}
+
+.chevron_right_rotate {
+    transform: rotate(90deg);
+}
+
+
+
 
 /* footer */
 footer {
@@ -411,6 +457,11 @@ footer {
         justify-content: space-between;
         margin: 50px 10vw;
         border-bottom: 1px solid;
+    }
+
+    #ham_menu,
+    #ham_menu_detail {
+        display: none;
     }
 }
 

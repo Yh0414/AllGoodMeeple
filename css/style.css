@@ -22,6 +22,7 @@ body {
 a {
     text-decoration: none;
     color: var(--colour-text);
+    cursor: pointer;
 }
 
 a:active,
@@ -310,8 +311,28 @@ button {
     box-shadow: 0 10px 50px 0 var(--colour-main);
 }
 
+/* side bar */
+.side_bar {
+    width: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    position: fixed;
+    left: calc(100% - 40px);
+    top: 350px;
+}
 
+.side_bar > a {
+    width: 40px;
+    height: 40px;
+    background-color: #CE4A0E;
+    margin: 2px 0;
+}
 
+.side_bar img {
+    margin: 10px auto;
+}
 
 
 

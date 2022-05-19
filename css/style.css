@@ -19,6 +19,16 @@ body {
     color: var(--colour-text);
 }
 
+a {
+    text-decoration: none;
+    color: var(--colour-text);
+}
+
+a:active,
+a:hover {
+    color: none;
+}
+
 button {
     cursor: pointer;
     border: none;
@@ -93,7 +103,7 @@ button {
 /* search bar */
 .search_bar_box {
     width: 240px;
-    margin: 40px 0;
+    margin: 20px 0;
 }
 
 .search {
@@ -132,7 +142,7 @@ button {
 #ham_icon {
     height: 42px;
     width: 42px;
-    margin: 40px 25px;
+    margin: 20px 25px;
     border: none;
     box-shadow: none;
     padding: 0;
@@ -154,7 +164,7 @@ button {
     top: 0;
     left: 0;
     width: 30vw;
-    background: var(--colour-nav-mobile);
+    background: var(--colour-bg-header);
     text-align: left;
 }
 
@@ -165,8 +175,7 @@ button {
 }
 
 #ham_menu_detail a {
-    text-decoration: none;
-    color: var(--colour-bg-header);
+    color: white;
     transition: color 0.3s ease;
 }
 
@@ -178,7 +187,8 @@ button {
     cursor: pointer;
 }
 
-#ham_menu_detail a:hover {
+#ham_menu_detail a:hover,
+#ham_menu_detail a:active {
     color: var(--colour-main)
 }
 
@@ -249,11 +259,66 @@ button {
     transition: all .3s linear;
 }
 
+/* categories-bar */
+.categories_bar {
+    overflow-x: auto;
+    white-space: nowrap;
+    background: var(--colour-nav-mobile);
+    border-radius: 10px;
+    text-align: left;
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+.categories_bar::-webkit-scrollbar {
+    display: none;
+}
+
+.categories_bar > li {
+    display: inline-table;
+    width: 100px;
+    height: 100px;
+    margin: 20px 20px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+.categories_bar a {
+    font-family: var(--font-secondary);
+    font-size: 12px;
+    color: black;
+}
+
+.categories_bar img {
+    margin: 10px auto;
+}
+
+.categories_bar p {
+    margin: 0;
+}
+
+.each_category > a:active,
+.each_category > a:hover  {
+    color: var(--colour-main);
+    border-bottom: 2px solid var(--colour-main);
+    padding-bottom: 15px;
+}
+
+.categories_bar > li:hover {
+    transform: scale(1.2);
+    box-shadow: 0 10px 50px 0 var(--colour-main);
+}
+
+
+
+
 
 
 /* footer */
 footer {
     background-color: var(--colour-bg-footer);
+    overflow: hidden;
 }
 
 .footer_logo_mobile,
@@ -396,14 +461,10 @@ footer {
         display: block;
     }
 
-    .header_nav a {
-        text-decoration: none;
-        color: var(--colour-text);
-    }
-    
     .header_nav a:active,
     .header_nav a:hover {
         color: white;
+        border-bottom: 1px solid white;
     }
     
     nav {
@@ -428,6 +489,11 @@ footer {
         text-decoration: none;
         font-weight: bold;
         color: #F9943B;
+    }
+
+    .header_login a:hover,
+    .header_login a:active {
+        border-bottom: 2px solid var(--colour-main);
     }
     
     .header_nav {
@@ -462,6 +528,10 @@ footer {
     #ham_menu,
     #ham_menu_detail {
         display: none;
+    }
+
+    .categories_bar {
+        margin: 20px 10vw;
     }
 }
 

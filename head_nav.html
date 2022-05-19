@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <title>Head Navigations</title>
+</head>
+<body>
+    <header>
+        <!-- nav desktop version -->
+        <nav class="nav_desktop">
+            <div>
+                <ul class="header_nav nav_desktop">
+                    <li><a class="btn" href="#">Home</a></li>
+                    <li><a class="btn" href="#">Categories</a></li>
+                    <li><a class="btn" href="#">Accessories</a></li>
+                    <li><a class="btn" href="#">Sale</a></li>
+                    <li><a class="btn" href="#">News</a></li>
+                    <li><a class="btn" href="#">Find Us</a></li>
+                    <li><a class="btn" href="#">About Us</a></li>
+                    <li><a class="btn" href="#">Customer Service</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="header_login nav_desktop">
+                    <li><a class="btn btn-main" href="#">Home</a></li>
+                    <li><a class="btn btn-main" href="#">My Cart</a></li>
+                    <li><a class="btn btn-main" href="#">Wish List</a></li>
+                    <li><a class="btn btn-main" href="#">Login</a></li>
+                </ul>
+            </div>
+            <div class="social_icons nav_desktop">
+                <img src="img/Icon_facebook.svg" alt="facebook" class="social_logo">
+                <img src="img/Icon_instagram.svg" alt="instagram" class="social_logo">
+                <img src="img/Icon_twitter.svg" alt="twitter" class="social_logo">
+            </div>
+        </nav>
+        
+        <!-- nav mobile version -->
+        <div class="nav_mobile_contain">
+            <div class="nav_mobile">
+                <div class="logo_mobile">
+                    <img src="img/mobile_ver_logo.svg" alt="logo_mobile">
+                </div>
+                <button class="home_bnt">
+                    <img src="img/Icon home.svg" alt="home"><br>
+                    <p>Home</p>
+                </button>
+                <button class="cart_bnt">
+                    <img src="img/Icon shopping-cart.svg" alt="cart"><br>
+                    <p>Cart</p>
+                </button>
+                <button class="wish_list_bnt">
+                    <img src="img/Icon wish-list.svg" alt="wish_list"><br>
+                    <p>Wish List</p>
+                </button>
+                <button class="login_bnt">
+                    <img src="img/Icon login.svg" alt="login"><br>
+                    <p>Login</p>
+                </button>
+            </div>
+        </div>
+
+        <!-- logo + search_bar + humburger_menu -->
+        <div class="logo_bar">
+            <div class="logo_desktop">
+                <img src="img/desktop_ver_logo.svg" alt="logo_desktop">
+            </div>
+            <div class="search_bar_box">
+                <form action="" class="search_bar">
+                    <input type="text" class="search" placeholder="Search products...">
+                    <button class="search_btn">
+                        <img src="img/Icon search.svg">
+                    </button>
+                </form>
+            </div>
+            <div id="ham_menu">
+                <!-- hamburger button -->
+                <button id="ham_icon" onclick=openNavbar()>
+                    <span></span>
+                    <span></span>
+                    <span></span>  
+                </button>
+            </div>
+
+            <div id="ham_menu_detail">
+                <button id="close_icon" onclick=closeNavbar()>
+                    <span></span>
+                    <span></span> 
+                </button>
+
+                <!-- hamburger menu list -->
+                <ul id="ham_menu_list">
+                    <div class="nav_block">
+                        <div class="nav_title">
+                            <a href="/index.html">
+                                <li>Home</li>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="nav_block">
+                        <div class="nav_title">
+                            <a onclick=spreadCategoryList()>
+                                <li>Categories</li>
+                                <img class="chevron_right" src="img/Icon chevron-right.svg">
+                            </a>
+                        </div>
+                        <ul id="category_list">
+                            <li><a href="#">Board Games</a></li>
+                            <li><a href="#">Card Games</a></li>
+                            <li><a href="#">Dice Games</a></li>
+                            <li><a href="#">Quiz Games</a></li>
+                            <li><a href="#">Party Games</a></li>
+                            <li><a href="#">All-time Classics</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav_block">
+                        <div class="nav_title">
+                            <a href="#">
+                                <li>Accessories</li>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="nav_block">
+                        <div class="nav_title">
+                            <a href="#">
+                                <li>Sale</li>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="nav_block">
+                        <div class="nav_title">
+                            <a href="#">
+                                <li>News</li>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="nav_block">
+                        <div class="nav_title">
+                            <a href="#">
+                                <li>Find Us</li>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="nav_block">
+                        <div class="nav_title">
+                            <a href="#">
+                                <li>About Us</li>
+                                <img src="img/Icon chevron-right.svg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="nav_block">
+                        <div class="nav_title">
+                            <a href="#">
+                                <li>Customer Service</li>
+                                <img src="img/Icon chevron-right.svg">
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

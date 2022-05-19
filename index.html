@@ -5,279 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           
+           $('#head_nav').load("head_nav.html");
+           $('#foot').load("foot.html");
+        
+        });
+    </script>
     <script src="js/navbar.js"></script>
     <title>All Good Meeple</title>
 </head>
 <body>
-    <header>
-        <!-- nav desktop version -->
-        <nav class="nav_desktop">
-            <div>
-                <ul class="header_nav nav_desktop">
-                    <li><a class="btn" href="#">Home</a></li>
-                    <li><a class="btn" href="#">Categories</a></li>
-                    <li><a class="btn" href="#">Accessories</a></li>
-                    <li><a class="btn" href="#">Sale</a></li>
-                    <li><a class="btn" href="#">News</a></li>
-                    <li><a class="btn" href="#">Find Us</a></li>
-                    <li><a class="btn" href="#">About Us</a></li>
-                    <li><a class="btn" href="#">Customer Service</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul class="header_login nav_desktop">
-                    <li><a class="btn btn-main" href="#">Home</a></li>
-                    <li><a class="btn btn-main" href="#">My Cart</a></li>
-                    <li><a class="btn btn-main" href="#">Wish List</a></li>
-                    <li><a class="btn btn-main" href="#">Login</a></li>
-                </ul>
-            </div>
-            <div class="social_icons nav_desktop">
-                <img src="img/Icon_facebook.svg" alt="facebook" class="social_logo">
-                <img src="img/Icon_instagram.svg" alt="instagram" class="social_logo">
-                <img src="img/Icon_twitter.svg" alt="twitter" class="social_logo">
-            </div>
-        </nav>
-        
-        <!-- nav mobile version -->
-        <div class="nav_mobile_contain">
-            <div class="nav_mobile">
-                <div class="logo_mobile">
-                    <img src="img/mobile_ver_logo.svg" alt="logo_mobile">
-                </div>
-                <button class="home_bnt">
-                    <img src="img/Icon home.svg" alt="home"><br>
-                    <p>Home</p>
-                </button>
-                <button class="cart_bnt">
-                    <img src="img/Icon shopping-cart.svg" alt="cart"><br>
-                    <p>Cart</p>
-                </button>
-                <button class="wish_list_bnt">
-                    <img src="img/Icon wish-list.svg" alt="wish_list"><br>
-                    <p>Wish List</p>
-                </button>
-                <button class="login_bnt">
-                    <img src="img/Icon login.svg" alt="login"><br>
-                    <p>Login</p>
-                </button>
-            </div>
-        </div>
-        
-    </header>
+    <!-- head navigation bar -->
+    <div id="head_nav"></div>
 
     <main>
-        <!-- logo + search_bar + humburger_menu -->
-        <div class="logo_bar">
-            <div class="logo_desktop">
-                <img src="img/desktop_ver_logo.svg" alt="logo_desktop">
-            </div>
-            <div class="search_bar_box">
-                <form action="" class="search_bar">
-                    <input type="text" class="search" placeholder="Search products...">
-                    <button class="search_btn">
-                        <img src="img/Icon search.svg">
-                    </button>
-                </form>
-            </div>
-            <div id="ham_menu">
-                <!-- hamburger button -->
-                <button id="ham_icon" onclick=openNavbar()>
-                    <span></span>
-                    <span></span>
-                    <span></span>  
-                </button>
-            </div>
-
-            <div id="ham_menu_detail">
-                <button id="close_icon" onclick=closeNavbar()>
-                    <span></span>
-                    <span></span> 
-                </button>
-
-                <!-- hamburger menu list -->
-                <ul id="ham_menu_list">
-                    <div class="nav_block">
-                        <div class="nav_title">
-                            <a href="#">
-                                <li>Home</li>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="nav_block">
-                        <div class="nav_title">
-                            <a onclick=spreadCategoryList()>
-                                <li>Categories</li>
-                                <img class="chevron_right" src="img/Icon chevron-right.svg">
-                            </a>
-                        </div>
-                        <ul id="category_list">
-                            <li><a href="#">Board Games</a></li>
-                            <li><a href="#">Card Games</a></li>
-                            <li><a href="#">Dice Games</a></li>
-                            <li><a href="#">Quiz Games</a></li>
-                            <li><a href="#">Party Games</a></li>
-                            <li><a href="#">All-time Classics</a></li>
-                        </ul>
-                    </div>
-                    <div class="nav_block">
-                        <div class="nav_title">
-                            <a href="#">
-                                <li>Accessories</li>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="nav_block">
-                        <div class="nav_title">
-                            <a href="#">
-                                <li>Sale</li>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="nav_block">
-                        <div class="nav_title">
-                            <a href="#">
-                                <li>News</li>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="nav_block">
-                        <div class="nav_title">
-                            <a href="#">
-                                <li>Find Us</li>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="nav_block">
-                        <div class="nav_title">
-                            <a href="#">
-                                <li>About Us</li>
-                                <img src="img/Icon chevron-right.svg">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="nav_block">
-                        <div class="nav_title">
-                            <a href="#">
-                                <li>Customer Service</li>
-                                <img src="img/Icon chevron-right.svg">
-                            </a>
-                        </div>
-                    </div>
-                </ul>
-            </div>
-        </div>
-
         <!-- categories_bar -->
         <div class="categories-bar">
 
         </div>
     </main>
 
-    <footer>
-        <!-- footer logo -->
-        <div class="logo_desktop footer_logo_desktop">
-            <img src="img/desktop_ver_logo.svg" alt="logo_desktop">
-        </div>
-        <div class="logo_mobile footer_logo_mobile">
-            <img src="img/mobile_ver_logo.svg" alt="logo_mobile">
-        </div>
-
-        <div class="newsletter">
-            <form action="" class="sunscribe_bar">
-                <span>Newsletter</span><br>
-                <input type="email" class="subscribe_enter" placeholder="Your Email Here"><br>
-                <input type="submit" class="subscribe_bnt" value="SUBSCRIBE NOW">
-            </form>
-        </div>
-
-        <div class="info_container">
-            <div class="findus">
-                <span>Find Us</span>
-                <ul class="findus_list">
-                    <li class="location">
-                        <img src="img/Icon location.svg" alt="location">
-                        <span>
-                            AGM Consulting, Bay Rose, Cheddar,
-                            <br>
-                            BS27 3QN
-                        </span>
-                    </li>
-                    <li class="phone">
-                        <img src="img/Icon phone.svg" alt="phone">
-                        <span>
-                            07770 393608
-                        </span>
-                    </li>
-                    <li class="mail">
-                        <img src="img/Icon mail.svg" alt="mail">
-                        <span>
-                            contact@allgoodmeeple.co.uk
-                        </span>
-                    </li>
-                    <li class="open_time">
-                        <img src="img/Icon timer.svg" alt="timer">
-                        <span>
-                            Mon-Fri: 9am - 5pm
-                            <br>
-                            Sat-Sun: Closed
-                            <br>
-                            Public Holiday: Closed
-                        </span>
-                    </li>
-                </ul>
-            </div>
-            <div class="aboutus">
-                <span>About Us</span>
-                <ul class="aboutus_list">
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Blog</li>
-                    <li>Contacts</li>
-                </ul>
-            </div>
-            <div class="categories">
-                <span>Categories</span>
-                <ul class="categories_list">
-                    <li>Board Games</li>
-                    <li>Card Games</li>
-                    <li>Dice Games</li>
-                    <li>Quiz Games</li>
-                    <li>Party Games</li>
-                    <li>All-time Classics</li>
-                </ul>
-            </div>
-            <div class="customerservice">
-                <span>Customer Service</span>
-                <ul class="customer_service_list">
-                    <li>Contactt us</li>
-                    <li>Our team</li>
-                    <li>Pricing</li>
-                    <li>Privacy Policy</li>
-                    <li>Service Plus</li>
-                    <li>Our Services</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer_social_icons">
-            <img src="img/Icon_facebook.svg" alt="facebook" class="foot_icon">
-            <img src="img/Icon_instagram.svg" alt="instagram" class="foot_icon">
-            <img src="img/Icon_twitter.svg" alt="twitter" class="foot_icon">
-        </div>
-
-        <div class="copyright_contain">
-            <div class="copyright">
-                <span>COPYRIG</span>
-                <img src="img/Icon copyright.svg" alt="copyright">
-                <span>ALL RIGHTS</span>
-            </div>
-            <div class="payment_method">
-                <img src="img/paypal.svg" alt="paypal">
-                <img src="img/visa.svg" alt="visa">
-                <img src="img/mastercard.svg" alt="mastercard">
-            </div>
-        </div>
-    </footer>
+    <!-- footer -->
+    <div id="foot"></div>
 </body>
 </html>

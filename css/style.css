@@ -17,6 +17,7 @@ body {
     margin: 0;
     padding: 0;
     color: var(--colour-text);
+    cursor: default;
 }
 
 a {
@@ -311,7 +312,7 @@ button {
 }
 
 .categories_bar > li:hover {
-    transform: scale(1.2);
+    transform: scale(1.25);
     box-shadow: 0 10px 50px 0 var(--colour-main);
 }
 
@@ -342,7 +343,7 @@ button {
 /* banner */
 #banner #carousel_wrap {
 	position: relative;
-	margin: 0 auto;
+	margin: 20px auto;
 	width: 100%;
 	overflow: hidden;
 }
@@ -427,6 +428,183 @@ button {
 	transition-duration: 2s;
 }
 
+/* New Arrivals */
+h2 {
+    color: var(--colour-bg-footer);
+    font-family: var(--font-primary);
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.one_product {
+    margin: auto;
+    width: 250px;
+    height: 350px;
+    background-color: #DBDBDB;
+    border-radius: 10px;
+    font-family: var(--font-secondary);
+    margin: 0 auto 30px auto;
+    position: relative;
+}
+
+.game_type {
+    color: #80D49F;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    margin: 15px;
+    padding-top: 15px;
+}
+
+.best_sale_contain {
+    display: block;
+    width: 80px;
+    height: 25px;
+    background-color: #A30414;
+    border-radius: 0 10px 0 10px;
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    line-height: 25px;
+}
+
+.sale_contain {
+    width: 40px;
+    height: 40px;
+    background-color: var(--colour-main);
+    color: white;
+    border-radius: 10px;
+    line-height: 15px;
+    position: absolute;
+    left: 50px;
+}
+
+.sale_contain > span {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.product_img_contain {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 20px auto;
+}
+
+.product_img_contain img {
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+}
+
+.product_img_contain img:hover {
+    transform: scale(1.25);
+    border-radius: 50%;
+    box-shadow: 0 10px 50px 0 var(--colour-main);
+}
+
+.product_name {
+    color: var(--colour-bg-footer);
+    font-size: 12px;
+    font-weight: bold;
+    margin: auto;
+    line-height: 15px;
+}
+
+.price_contain {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.true_price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #CE4A0E;
+}
+
+.pre_price {
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: line-through 2px var(--colour-bg-footer);
+}
+
+.add_to_cart {
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #CE4A0E;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    margin-right: 25px;
+    opacity: 0.5;
+}
+
+.add_to_cart:hover {
+    opacity: 1
+}
+
+.add_to_wish_list {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+.add_to_wish_list > img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.arrow_new_arrivals_contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.arrow_new_arrivals {
+    width: 80px;
+    height: 40px;
+    margin: 0 20px 20px 20px;
+    background: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.arrow_new_arrivals:hover {
+    background-color: var(--colour-main);
+}
+
+#new2, #new3, #new4 {
+    display: none;
+}
+
+@media screen and (min-width:1000px ) {
+    .product_contain {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .game_type {
+        padding-top: 0;
+    }
+
+    #new2 {
+        display: block;
+    }
+}
 
 /* footer */
 footer {
@@ -673,6 +851,15 @@ footer {
     .categories_bar {
         margin: 20px 10vw;
         margin-bottom: 50px;
+    }
+
+    /* New arrivals */
+    h2 {
+        font-size: 80px;
+    }
+
+    #new2, #new3, #new4 {
+        display: block
     }
 }
 

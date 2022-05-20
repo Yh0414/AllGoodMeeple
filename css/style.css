@@ -172,6 +172,7 @@ button {
     width: 30vw;
     background: var(--colour-bg-header);
     text-align: left;
+        z-index: 5;
 }
 
 @media screen and (max-width:700px ){
@@ -438,7 +439,6 @@ h2 {
 }
 
 .one_product {
-    margin: auto;
     width: 250px;
     height: 350px;
     background-color: #DBDBDB;
@@ -454,6 +454,15 @@ h2 {
     font-weight: bold;
     display: flex;
     margin: 15px;
+    padding-top: 15px;
+}
+
+.each_block > .one_product {
+    margin: 30px auto 30px auto;
+    padding: 0%;
+}
+
+.each_block .game_type {
     padding-top: 15px;
 }
 
@@ -488,6 +497,19 @@ h2 {
     padding: 0;
 }
 
+.out_of_stock {
+    width: 70px;
+    height: 20px;
+    background-color: #B777FF;
+    color: white;
+    border-radius: 10px;
+    font-size: 10px;
+    position: absolute;
+    top: 180px;
+    left: 130px;
+    line-height: 20px;
+}
+
 .product_img_contain {
     width: 150px;
     height: 150px;
@@ -503,7 +525,7 @@ h2 {
 }
 
 .product_img_contain img:hover {
-    transform: scale(1.25);
+    transform: scale(1.5);
     border-radius: 50%;
     box-shadow: 0 10px 50px 0 var(--colour-main);
 }
@@ -537,28 +559,44 @@ h2 {
     width: 120px;
     height: 30px;
     border-radius: 10px;
-    background-color: #CE4A0E;
+    background-color: var(--colour-main);
     color: white;
     font-size: 10px;
     font-weight: bold;
     margin-right: 25px;
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .add_to_cart:hover {
-    opacity: 1
+    background-color: #CE4A0E;
+}
+
+.disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+}
+
+.disabled:hover {
+    color: none;
 }
 
 .add_to_wish_list {
+    width: 30px;
+    height: 30px;
     background: none;
-    border: none;
-    box-shadow: none;
+    border: 2px solid var(--colour-main);
+    border-radius: 6px;
     padding: 0;
 }
 
+.add_to_wish_list:hover {
+    background-color: #CE4A0E;
+    transition: 1s linear;
+}
+
 .add_to_wish_list > img {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     vertical-align: middle;
 }
 
@@ -604,6 +642,19 @@ h2 {
     #new2 {
         display: block;
     }
+
+    .featured_product_contain {
+        display: flex;
+        flex-wrap: wrap;
+    }
+ 
+    .featured_product_contain > .each_block {
+        width: 24%;
+    }
+
+    .featured_product_contain > .each_block:not(:nth-child(4n)) {
+        margin-right: calc(4%/3);
+    }
 }
 
 /* about Our store */
@@ -618,13 +669,13 @@ h2 {
     color: white;
 }
 
-.about_atore_content {
+.about_store_content {
     display: grid;
     grid-template-columns: 2fr 1fr;
     padding: 0 30px;
 }
 
-.about_atore_content > img {
+.about_store_content > img {
     width: 140px;
     height: 110px;
     margin: 0 0 50px 30px;
@@ -635,9 +686,47 @@ h2 {
     text-align: left;
     font-size: 14px;
     margin: 0;
-
 }
 
+/* featured games */
+#featured_games {
+    margin-bottom: 100px;
+}
+
+.featured_bnt_contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.feat_bnt {
+    margin: 10px 15px;
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    color: var(--colour-text);
+    border: 2px solid var(--colour-bg-footer);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.feat_bnt_active,
+.feat_bnt:hover {
+    border: none;
+    background-color: var(--colour-bg-footer);
+    color: white;
+}
+
+.more_bnt {
+    float: right;
+    margin-right: 4%;
+}
+
+.more_bnt::after {
+    clear: both;
+    display: block;
+}
 
 
 /* footer */
@@ -897,7 +986,7 @@ footer {
     }
 
     /* about our store */
-    .about_atore_content > img {
+    .about_store_content > img {
         width: 640px;
         height: 500px;
     }
@@ -905,7 +994,6 @@ footer {
     .about_store p {
         font-size: 26px;
     }
-    
 }
 
 

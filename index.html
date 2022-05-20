@@ -29,23 +29,37 @@
     <div id="side_bar"></div>
 
     <main>
-        <div id="banner_contain">
-            <div class="scroll">
-                <ul>
-                    <li class="slider current"><img src="img/banner1.jpg"></li>
-                    <li class="slider"><img src="img/banner2.jpeg"></li>
-                    <li class="slider"><img src="img/banner3.jpg"></li>
-                </ul>
-     
-                <!-- 左右箭头的展示 -->
-                <div id="lf"><</div>
-                <div id="lr">></div>
-                <!-- 小圆点展示 -->
-                <div class="dots">
-                    <span class="point square"></span>
-                    <span class="point"></span>
-                    <span class="point"></span>
+        <!-- banner -->
+        <div id="banner">
+            <div id="carousel_wrap">
+                <div id="carousel_images">
+                    <img src="img/banner1.jpg">
+                    <img src="img/banner2.jpeg">
+                    <img src="img/banner3.jpg">
+                    <img src="img/banner1.jpg">
+                    <img src="img/banner2.jpeg">
                 </div>
+                <div class="arrow_contain">
+                    <div class="arrow">
+                        <span class="left-arrow"><</span>
+                    </div>
+                    <div class="arrow">
+                        <span class="right-arrow">></span>
+                    </div>
+                    
+                </div>
+
+                <div id="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            <div id="test">
+                <h1>blog</h1>
+                <h1>blogs</h1>
+                <h1>blog</h1>
+                <h1>blog</h1>
             </div>
         </div>
         <script src="js/index.js"></script>

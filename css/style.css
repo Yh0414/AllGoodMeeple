@@ -606,6 +606,40 @@ h2 {
     }
 }
 
+/* about Our store */
+.about_store {
+    background-color: var(--colour-main);
+    margin: 25px 0;
+    padding: 20px 0 50px;
+}
+
+.about_store > h2 {
+    margin: 0 auto 30px;
+    color: white;
+}
+
+.about_atore_content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 0 30px;
+}
+
+.about_atore_content > img {
+    width: 140px;
+    height: 110px;
+    margin: 0 0 50px 30px;
+}
+
+.about_store p {
+    color: var(--colour-bg-footer);
+    text-align: left;
+    font-size: 14px;
+    margin: 0;
+
+}
+
+
+
 /* footer */
 footer {
     background-color: var(--colour-bg-footer);
@@ -861,6 +895,17 @@ footer {
     #new2, #new3, #new4 {
         display: block
     }
+
+    /* about our store */
+    .about_atore_content > img {
+        width: 640px;
+        height: 500px;
+    }
+
+    .about_store p {
+        font-size: 26px;
+    }
+    
 }
 
 

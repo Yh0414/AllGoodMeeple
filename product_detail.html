@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        $(document).ready(function(){
+           
+           $('#head_nav').load("head_nav.html");
+           $('#foot').load("foot.html");
+           $('#category_nav').load("category_nav.html");
+           $('#side_bar').load("side_bar.html");
+        
+        });
+    </script>
+    <title>All Good Meeple - Product Detail</title>
+</head>
+<body>
+    <!-- head navigation bar -->
+    <div id="head_nav"></div>
+
+    <!-- category navigation bar -->
+    <div id="category_nav"></div>
+
+    <!-- side bar -->
+    <div id="side_bar"></div>
+
+    <main>
+        <!-- page title -->
+        <div class="page_title_contain">
+            <div class="page_nav">
+                <p><a href="/index.html">Home - </a>Board Games</p>
+            </div>
+            <div class="page_title">
+                <p>Board Games</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <div id="foot"></div>
+</body>
+</html>

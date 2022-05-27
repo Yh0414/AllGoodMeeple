@@ -969,6 +969,10 @@ h2 {
     margin-top: -37px;
 }
 
+.page_num_bottom {
+    margin: 60px auto;
+}
+
 
 
 /* footer */
@@ -1303,11 +1307,6 @@ footer {
     .products_list_shown .each_block {
         margin: 0 25px;
     }
-
-    .page_num_bottom {
-        margin: 60px auto;
-    }
-    
 
 }
 

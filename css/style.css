@@ -920,7 +920,7 @@ h2 {
     box-shadow: none;
 }
 .layout_change_contain img {
-    margin: 10px 15px;
+    margin: 11px 15px;
 }
 .layout_change_contain > button:nth-child(1) {
     border-right: 1px solid black;
@@ -1297,11 +1297,15 @@ footer {
         justify-content: space-between;
         align-items: center;
         flex-direction: row;
-        margin-left: 50px;
+        margin-left: 65px;
     }
 
     .products_list_shown .each_block {
         margin: 0 25px;
+    }
+
+    .page_num_bottom {
+        margin: 60px auto;
     }
     
 

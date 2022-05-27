@@ -1271,13 +1271,18 @@ footer {
         font-size: 50px;
     }
 
+
+    /* product-page whole */
+    .product_list_page_contain {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
     /* filter box */
     .filter_contain {
         display: block;
     }
 
-    .product_display,
-    .products_list_shown {
+    .product_display {
         margin-right: 10vw;
     }
 
@@ -1287,13 +1292,17 @@ footer {
     }
 
     .products_list_shown {
-        display: block;
+        display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         flex-direction: row;
+        margin-left: 50px;
     }
-    
+
+    .products_list_shown .each_block {
+        margin: 0 25px;
+    }
     
 
 }

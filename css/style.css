@@ -1279,7 +1279,8 @@ footer {
         float: left;
     }
 
-    .product_display {
+    .product_display,
+    .products_list_shown {
         float: right;
         margin-right: 10vw;
     }

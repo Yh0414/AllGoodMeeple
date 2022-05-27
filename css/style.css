@@ -902,11 +902,9 @@ h2 {
     align-items: center;
     margin-left: 65px;
 }
-
 .function_bar > div {
-    margin: 20px;
+    margin-bottom: 20px;
 }
-
 /* layout shown button */
 .layout_change_contain {
     width: 130px;
@@ -930,7 +928,7 @@ h2 {
 
 /* page num navigation */
 .page_num_contain {
-    width: 290px;
+    width: 250px;
     height: 45px;
     border-top: 1px solid var(--colour-text);
     border-bottom: 1px solid var(--colour-text);
@@ -1276,17 +1274,24 @@ footer {
     /* filter box */
     .filter_contain {
         display: block;
-        float: left;
     }
 
     .product_display,
     .products_list_shown {
-        float: right;
         margin-right: 10vw;
     }
 
     .function_bar > div {
+        margin: 20px;
         margin-left: 50px;
+    }
+
+    .products_list_shown {
+        display: block;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
     }
     
     

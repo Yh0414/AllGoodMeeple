@@ -41,358 +41,361 @@
             </div>
         </div>
 
-        <!-- filter function -->
-        <ul class="filter_contain">
-            <li class="filter_search_contain">
-                <p class="filter_title">Search in Board Games</p>
-                <form action="" class="filter_search_bar">
-                    <input type="text" class="search filter_search_text" placeholder="Search products...">
-                    <button class="search_btn">
-                        <img src="img/Icon search.svg">
-                    </button>
-                </form>
-                <div class="clear"></div>
-            </li>
-            <li class="available_contain">
-                <div class="filter_title">
-                    <p>Available Only <img src="img/Icon ionic-ios-arrow-up.svg"></p>
-                </div>
-                <div class="switch-btn">
-                    <input type="checkbox" class="hidden-checkbox">
-                    <span class="switch-area"></span>
-                    <span class="switch-toggle"></span>
-                </div>
-                <span>Show only available</span>
-                <div class="clear"></div>
-            </li>
-            <li class="price_contain">
-                <div class="filter_title">
-                    <p>Price <img src="img/Icon ionic-ios-arrow-up.svg"></p>
-                </div>
-                <div class="price_range">
-                    <p>$0.00</p>
-                    <p>$3,000.00</p>
-                    <div class="clear"></div>
-                    <input type="range" id="dur" value="0" min="0" max="3000" step="10">
-                </div>
-            </li>
-            <li class="category_contain">
-                <div class="filter_title">
-                    <p>Category <img src="img/Icon ionic-ios-arrow-up.svg"></p>
-                </div>
-                <ul class="check_filter">
-                    <li class="each_cate_filter board_filter">
-                        <input type="checkbox" class="cate-checkbox">
-                        <p>Board Games <img src="img/Icon ionic-ios-arrow-down.svg"></p>
-                        <p>4430</p>
-                    </li>
-                    <li class="each_cate_filter">
-                        <input type="checkbox" class="cate-checkbox">
-                        <p>Card Games <img src="img/Icon ionic-ios-arrow-down.svg"></p>
-                        <p>1584</p>
-                    </li>
-                    <li class="each_cate_filter">
-                        <input type="checkbox" class="cate-checkbox">
-                        <p>Dice Games <img src="img/Icon ionic-ios-arrow-down.svg"></p>
-                        <p>1665</p>
-                    </li>
-                    <li class="each_cate_filter">
-                        <input type="checkbox" class="cate-checkbox">
-                        <p>Quiz Games <img src="img/Icon ionic-ios-arrow-down.svg"></p>
-                        <p>565</p>
-                    </li>
-                    <li class="each_cate_filter">
-                        <input type="checkbox" class="cate-checkbox">
-                        <p>Party Games <img src="img/Icon ionic-ios-arrow-down.svg"></p>
-                        <p>5500</p>
-                    </li>
-                    <li class="each_cate_filter">
-                        <input type="checkbox" class="cate-checkbox">
-                        <p>All-time Classics <img src="img/Icon ionic-ios-arrow-down.svg"></p>
-                        <p>5500</p>
-                    </li>
-                </ul>
-            </li>
-            <li class="available_contain">
-                <div class="filter_title">
-                    <p>Tags <img src="img/Icon ionic-ios-arrow-down.svg"></p>
-                </div>
-            </li>
-        </ul>
-
-        <!-- product display block -->
-        <div class="product_display">
-            <div class="function_bar">
-                <!-- layout shown button -->
-                <div class="layout_change_contain">
-                    <button><img src="img/Icon grid.svg"></button>
-                    <button><img src="img/Icon list.svg"></button>
-                </div>
-                <!-- current page number bar -->
-                <div class="page_num_contain">
-                    <button class="page_active">1</button>
-                    <button>2</button>
-                    <button>3</button>
-                    <span>...</span>
-                    <button>6</button>
-                    <button>7</button>
-                    <button>8</button>
-                    <img src="img/Icon dropright.svg">
-                </div>
-                <!-- sort bar -->
-                <div class="sort_bar_contain">
-                    <form action="">
-                        <input type="text" class="sort" placeholder="Sort by latest">
-                        <button class="sort_btn">
-                            <img src="img/Icon ionic-ios-arrow-down.svg">
+        <div class="product_list_page_contain">
+            <!-- filter function -->
+            <ul class="filter_contain">
+                <li class="filter_search_contain">
+                    <p class="filter_title">Search in Board Games</p>
+                    <form action="" class="filter_search_bar">
+                        <input type="text" class="search filter_search_text" placeholder="Search products...">
+                        <button class="search_btn">
+                            <img src="img/Icon search.svg">
                         </button>
                     </form>
+                    <div class="clear"></div>
+                </li>
+                <li class="available_contain">
+                    <div class="filter_title">
+                        <p>Available Only <img src="img/Icon ionic-ios-arrow-up.svg"></p>
+                    </div>
+                    <div class="switch-btn">
+                        <input type="checkbox" class="hidden-checkbox">
+                        <span class="switch-area"></span>
+                        <span class="switch-toggle"></span>
+                    </div>
+                    <span>Show only available</span>
+                    <div class="clear"></div>
+                </li>
+                <li class="price_contain">
+                    <div class="filter_title">
+                        <p>Price <img src="img/Icon ionic-ios-arrow-up.svg"></p>
+                    </div>
+                    <div class="price_range">
+                        <p>$0.00</p>
+                        <p>$3,000.00</p>
+                        <div class="clear"></div>
+                        <input type="range" id="dur" value="0" min="0" max="3000" step="10">
+                    </div>
+                </li>
+                <li class="category_contain">
+                    <div class="filter_title">
+                        <p>Category <img src="img/Icon ionic-ios-arrow-up.svg"></p>
+                    </div>
+                    <ul class="check_filter">
+                        <li class="each_cate_filter board_filter">
+                            <input type="checkbox" class="cate-checkbox">
+                            <p>Board Games <img src="img/Icon ionic-ios-arrow-down.svg"></p>
+                            <p>4430</p>
+                        </li>
+                        <li class="each_cate_filter">
+                            <input type="checkbox" class="cate-checkbox">
+                            <p>Card Games <img src="img/Icon ionic-ios-arrow-down.svg"></p>
+                            <p>1584</p>
+                        </li>
+                        <li class="each_cate_filter">
+                            <input type="checkbox" class="cate-checkbox">
+                            <p>Dice Games <img src="img/Icon ionic-ios-arrow-down.svg"></p>
+                            <p>1665</p>
+                        </li>
+                        <li class="each_cate_filter">
+                            <input type="checkbox" class="cate-checkbox">
+                            <p>Quiz Games <img src="img/Icon ionic-ios-arrow-down.svg"></p>
+                            <p>565</p>
+                        </li>
+                        <li class="each_cate_filter">
+                            <input type="checkbox" class="cate-checkbox">
+                            <p>Party Games <img src="img/Icon ionic-ios-arrow-down.svg"></p>
+                            <p>5500</p>
+                        </li>
+                        <li class="each_cate_filter">
+                            <input type="checkbox" class="cate-checkbox">
+                            <p>All-time Classics <img src="img/Icon ionic-ios-arrow-down.svg"></p>
+                            <p>5500</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="available_contain">
+                    <div class="filter_title">
+                        <p>Tags <img src="img/Icon ionic-ios-arrow-down.svg"></p>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- product display block -->
+            <div class="product_display">
+                <div class="function_bar">
+                    <!-- layout shown button -->
+                    <div class="layout_change_contain">
+                        <button><img src="img/Icon grid.svg"></button>
+                        <button><img src="img/Icon list.svg"></button>
+                    </div>
+                    <!-- current page number bar -->
+                    <div class="page_num_contain">
+                        <button class="page_active">1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <span>...</span>
+                        <button>6</button>
+                        <button>7</button>
+                        <button>8</button>
+                        <img src="img/Icon dropright.svg">
+                    </div>
+                    <!-- sort bar -->
+                    <div class="sort_bar_contain">
+                        <form action="">
+                            <input type="text" class="sort" placeholder="Sort by latest">
+                            <button class="sort_btn">
+                                <img src="img/Icon ionic-ios-arrow-down.svg">
+                            </button>
+                        </form>
+                    </div>
                 </div>
+
+                <!-- products shown -->
+                <div class="products_list_shown">
+                    <div class="each_block">
+                        <div class="one_product">
+                            <span class="game_type">Board game</span>
+
+                            <div class="product_img_contain">
+                                <a href="">
+                                    <img src="img/carcassonne Traders.png">
+                                </a>
+                            </div>
+
+                            <div class="out_of_stock">Out of stock</div>
+
+                            <div class="product_name">
+                                <span>Carcassonne Traders and</span>
+                                <br>
+                                <span>Builders expansion</span>
+                            </div>
+
+                            <div class="price_contain">
+                                <span class="true_price">$17.95</span>
+                            </div>
+
+                            <div class="product_button_contain">
+                                <button class="add_to_cart disabled">+ ADD TO CART</button>
+                                <button class="add_to_wish_list">
+                                    <img src="img/Icon side_wish_list.svg">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="each_block">
+                        <div class="one_product">
+                            <span class="game_type">Card game</span>
+
+                            <div class="best_sale_contain">Best Seller</div>
+
+                            <div class="product_img_contain">
+                                <a href="">
+                                    <img src="img/dixit_expansion_sets.jpg">
+                                </a>
+                            </div>
+
+                            <span class="product_name">Dixit expansion sets</span>
+
+                            <div class="price_contain">
+                                <span class="true_price">$18.95</span>
+                            </div>
+
+                            <div class="product_button_contain">
+                                <button class="add_to_cart">+ ADD TO CART</button>
+                                <button class="add_to_wish_list">
+                                    <img src="img/Icon side_wish_list.svg">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="each_block">
+                        <div class="one_product">
+                            <span class="game_type">Board game</span>
+
+                            <div class="best_sale_contain">Best Seller</div>
+
+                            <div class="product_img_contain">
+                                <a href="">
+                                    <img src="img/forbidden_island.jpg">
+                                </a>
+                            </div>
+
+                            <div class="out_of_stock">Out of stock</div>
+
+                            <span class="product_name">Forbidden Island</span>
+
+                            <div class="price_contain">
+                                <span class="true_price">$20.95</span>
+                            </div>
+
+                            <div class="product_button_contain">
+                                <button class="add_to_cart disabled">+ ADD TO CART</button>
+                                <button class="add_to_wish_list">
+                                    <img src="img/Icon side_wish_list.svg">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="each_block">
+                        <div class="one_product">
+                            <span class="game_type">Card game</span>
+
+                            <div class="sale_contain">
+                                <span>Sale</span>
+                                <span>-19%</span>
+                            </div>
+
+                            <div class="product_img_contain">
+                                <a href="">
+                                    <img src="img/codenames.jpg">
+                                </a>
+                            </div>
+
+                            <span class="product_name">Codenames</span>
+
+                            <div class="price_contain">
+                                <span class="true_price">$25.95</span>
+                                <span class="pre_price">$34.94</span>
+                            </div>
+
+                            <div class="product_button_contain">
+                                <button class="add_to_cart">+ ADD TO CART</button>
+                                <button class="add_to_wish_list">
+                                    <img src="img/Icon side_wish_list.svg">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="each_block">
+                        <div class="one_product">
+                            <span class="game_type">Board game</span>
+
+                            <div class="sale_contain">
+                                <span>Sale</span>
+                                <span>-32%</span>
+                            </div>
+
+                            <div class="product_img_contain">
+                                <a href="">
+                                    <img src="img/Azul.jpg">
+                                </a>
+                            </div>
+
+                            <span class="product_name">Azul</span>
+
+                            <div class="price_contain">
+                                <span class="true_price">$54.95</span>
+                                <span class="pre_price">$79.95</span>
+                            </div>
+
+                            <div class="product_button_contain">
+                                <button class="add_to_cart">+ ADD TO CART</button>
+                                <button class="add_to_wish_list">
+                                    <img src="img/Icon side_wish_list.svg">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="each_block">
+                        <div class="one_product">
+                            <span class="game_type">Card game</span>
+
+                            <div class="sale_contain">
+                                <span>Sale</span>
+                                <span>-18%</span>
+                            </div>
+
+                            <div class="product_img_contain">
+                                <a href="">
+                                    <img src="img/Sushi Go Party.jpg">
+                                </a>
+                            </div>
+
+                            <span class="product_name">Sushi Go Party</span>
+
+                            <div class="price_contain">
+                                <span class="true_price">$32.95</span>
+                                <span class="pre_price">$39.95</span>
+                            </div>
+
+                            <div class="product_button_contain">
+                                <button class="add_to_cart">+ ADD TO CART</button>
+                                <button class="add_to_wish_list">
+                                    <img src="img/Icon side_wish_list.svg">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="each_block">
+                        <div class="one_product">
+                            <span class="game_type">Board game</span>
+
+                            <div class="best_sale_contain">Best Seller</div>
+
+                            <div class="product_img_contain">
+                                <a href="">
+                                    <img src="img/TAKENOKO.jpg">
+                                </a>
+                            </div>
+
+                            <span class="product_name">TAKENOKO</span>
+
+                            <div class="price_contain">
+                                <span class="true_price">$69.95</span>
+                            </div>
+
+                            <div class="product_button_contain">
+                                <button class="add_to_cart">+ ADD TO CART</button>
+                                <button class="add_to_wish_list">
+                                    <img src="img/Icon side_wish_list.svg">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="each_block">
+                        <div class="one_product">
+                            <span class="game_type">Party game</span>
+
+                            <div class="sale_contain">
+                                <span>Sale</span>
+                                <span>-39%</span>
+                            </div>
+
+                            <div class="product_img_contain">
+                                <a href="">
+                                    <img src="img/happy-salmon-card-blue-edition.jpg">
+                                </a>
+                            </div>
+
+                            <span class="product_name">Happy Salmon (blue)</span>
+
+                            <div class="price_contain">
+                                <span class="true_price">$10.95</span>
+                                <span class="pre_price">$47.06</span>
+                            </div>
+
+                            <div class="product_button_contain">
+                                <button class="add_to_cart">+ ADD TO CART</button>
+                                <button class="add_to_wish_list">
+                                    <img src="img/Icon side_wish_list.svg">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-
-            <!-- products shown -->
-            <div class="products_list_shown">
-                <div class="each_block">
-                    <div class="one_product">
-                        <span class="game_type">Board game</span>
-
-                        <div class="product_img_contain">
-                            <a href="">
-                                <img src="img/carcassonne Traders.png">
-                            </a>
-                        </div>
-
-                        <div class="out_of_stock">Out of stock</div>
-
-                        <div class="product_name">
-                            <span>Carcassonne Traders and</span>
-                            <br>
-                            <span>Builders expansion</span>
-                        </div>
-
-                        <div class="price_contain">
-                            <span class="true_price">$17.95</span>
-                        </div>
-
-                        <div class="product_button_contain">
-                            <button class="add_to_cart disabled">+ ADD TO CART</button>
-                            <button class="add_to_wish_list">
-                                <img src="img/Icon side_wish_list.svg">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="each_block">
-                    <div class="one_product">
-                        <span class="game_type">Card game</span>
-
-                        <div class="best_sale_contain">Best Seller</div>
-
-                        <div class="product_img_contain">
-                            <a href="">
-                                <img src="img/dixit_expansion_sets.jpg">
-                            </a>
-                        </div>
-
-                        <span class="product_name">Dixit expansion sets</span>
-
-                        <div class="price_contain">
-                            <span class="true_price">$18.95</span>
-                        </div>
-
-                        <div class="product_button_contain">
-                            <button class="add_to_cart">+ ADD TO CART</button>
-                            <button class="add_to_wish_list">
-                                <img src="img/Icon side_wish_list.svg">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="each_block">
-                    <div class="one_product">
-                        <span class="game_type">Board game</span>
-
-                        <div class="best_sale_contain">Best Seller</div>
-
-                        <div class="product_img_contain">
-                            <a href="">
-                                <img src="img/forbidden_island.jpg">
-                            </a>
-                        </div>
-
-                        <div class="out_of_stock">Out of stock</div>
-
-                        <span class="product_name">Forbidden Island</span>
-
-                        <div class="price_contain">
-                            <span class="true_price">$20.95</span>
-                        </div>
-
-                        <div class="product_button_contain">
-                            <button class="add_to_cart disabled">+ ADD TO CART</button>
-                            <button class="add_to_wish_list">
-                                <img src="img/Icon side_wish_list.svg">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="each_block">
-                    <div class="one_product">
-                        <span class="game_type">Card game</span>
-
-                        <div class="sale_contain">
-                            <span>Sale</span>
-                            <span>-19%</span>
-                        </div>
-
-                        <div class="product_img_contain">
-                            <a href="">
-                                <img src="img/codenames.jpg">
-                            </a>
-                        </div>
-
-                        <span class="product_name">Codenames</span>
-
-                        <div class="price_contain">
-                            <span class="true_price">$25.95</span>
-                            <span class="pre_price">$34.94</span>
-                        </div>
-
-                        <div class="product_button_contain">
-                            <button class="add_to_cart">+ ADD TO CART</button>
-                            <button class="add_to_wish_list">
-                                <img src="img/Icon side_wish_list.svg">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="each_block">
-                    <div class="one_product">
-                        <span class="game_type">Board game</span>
-
-                        <div class="sale_contain">
-                            <span>Sale</span>
-                            <span>-32%</span>
-                        </div>
-
-                        <div class="product_img_contain">
-                            <a href="">
-                                <img src="img/Azul.jpg">
-                            </a>
-                        </div>
-
-                        <span class="product_name">Azul</span>
-
-                        <div class="price_contain">
-                            <span class="true_price">$54.95</span>
-                            <span class="pre_price">$79.95</span>
-                        </div>
-
-                        <div class="product_button_contain">
-                            <button class="add_to_cart">+ ADD TO CART</button>
-                            <button class="add_to_wish_list">
-                                <img src="img/Icon side_wish_list.svg">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="each_block">
-                    <div class="one_product">
-                        <span class="game_type">Card game</span>
-
-                        <div class="sale_contain">
-                            <span>Sale</span>
-                            <span>-18%</span>
-                        </div>
-
-                        <div class="product_img_contain">
-                            <a href="">
-                                <img src="img/Sushi Go Party.jpg">
-                            </a>
-                        </div>
-
-                        <span class="product_name">Sushi Go Party</span>
-
-                        <div class="price_contain">
-                            <span class="true_price">$32.95</span>
-                            <span class="pre_price">$39.95</span>
-                        </div>
-
-                        <div class="product_button_contain">
-                            <button class="add_to_cart">+ ADD TO CART</button>
-                            <button class="add_to_wish_list">
-                                <img src="img/Icon side_wish_list.svg">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="each_block">
-                    <div class="one_product">
-                        <span class="game_type">Board game</span>
-
-                        <div class="best_sale_contain">Best Seller</div>
-
-                        <div class="product_img_contain">
-                            <a href="">
-                                <img src="img/TAKENOKO.jpg">
-                            </a>
-                        </div>
-
-                        <span class="product_name">TAKENOKO</span>
-
-                        <div class="price_contain">
-                            <span class="true_price">$69.95</span>
-                        </div>
-
-                        <div class="product_button_contain">
-                            <button class="add_to_cart">+ ADD TO CART</button>
-                            <button class="add_to_wish_list">
-                                <img src="img/Icon side_wish_list.svg">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="each_block">
-                    <div class="one_product">
-                        <span class="game_type">Party game</span>
-
-                        <div class="sale_contain">
-                            <span>Sale</span>
-                            <span>-39%</span>
-                        </div>
-
-                        <div class="product_img_contain">
-                            <a href="">
-                                <img src="img/happy-salmon-card-blue-edition.jpg">
-                            </a>
-                        </div>
-
-                        <span class="product_name">Happy Salmon (blue)</span>
-
-                        <div class="price_contain">
-                            <span class="true_price">$10.95</span>
-                            <span class="pre_price">$47.06</span>
-                        </div>
-
-                        <div class="product_button_contain">
-                            <button class="add_to_cart">+ ADD TO CART</button>
-                            <button class="add_to_wish_list">
-                                <img src="img/Icon side_wish_list.svg">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <div class="clear"></div>
         </div>
-        <div class="clear"></div>
+
 
     </main>
 

@@ -1190,7 +1190,7 @@ h2 {
     font-weight: bold;
     border: 1px solid var(--colour-bg-footer);
 }
-.cart_table_mobile tbody td{
+.cart_table_mobile tbody tr{
     background-color: var(--colour-text);
     color: black;
     border: none;
@@ -1198,6 +1198,10 @@ h2 {
     font-size: 12px;
     text-align: center;
     padding-top: 10px;
+}
+.cart_table_mobile tbody tr:hover {
+    background-color: #80D49F;
+    transition: all 1s;
 }
 .product_cart_img {
     width: 60px;
@@ -1303,6 +1307,51 @@ h2 {
     transition: all 1s;
 }
 
+
+/* login */
+.login_form {
+    margin: 50px 5vw;
+    padding: 0 5vw;
+    text-align: left;
+    font-family: var(--font-secondary);
+    font-size: 20px;
+    border: 2px solid var(--colour-bg-footer);
+    border-radius: 10px;
+    background-color: var(--colour-text);
+}
+.login_form div {
+    margin: 30px auto;
+}
+.login_form div label {
+    font-weight: bold;
+    color: var(--colour-main);
+}
+.login_form div input {
+    width: 98%;
+    height: 20px;
+    border-radius: 5px;
+}
+.login_form > input,
+.login_form button {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: var(--colour-main);
+    color: white;
+    font-size: 15px;
+    border: none;
+    box-shadow: 0px 3px 1px var(--colour-nav-mobile);
+    margin: 0 0 20px 0;
+}
+.login_form > input:hover,
+.login_form button:hover {
+    background-color: #CE4A0E;
+}
+.login_form a {
+    color: black;
+    font-size: 10px;
+    margin-left: 10px;
+}
 
 
 
@@ -1721,6 +1770,10 @@ footer {
         background-color: var(--colour-text);
         color: black;
     }
+    .cart_table_desktop tbody tr:hover {
+        background-color: #80D49F;
+        transition: all 1s;
+    }
     .cart_table_desktop td {
         padding: 20px 70px;
         font-size: 35px;
@@ -1777,6 +1830,26 @@ footer {
         font-size: 30px;
         float: right;
         margin-right: 10vw;
+    }
+
+    
+    /* login */
+    .login_form {
+        margin: 50px 10vw;
+        font-size: 30px;
+    }
+    .login_form div input {
+        height: 30px;
+    }
+    .login_form > input,
+    .login_form button {
+        width: 20%;
+        height: 40px;
+        font-size: 30px;
+        margin: 0 0 50px 0;
+    }
+    .login_form a {
+        font-size: 20px;
     }
 }
 

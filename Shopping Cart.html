@@ -30,6 +30,114 @@
     <div id="side_bar"></div>
     
     <main>
+        <!-- page title -->
+        <div class="page_title_contain">
+            <div class="page_nav">
+                <p><a href="/index.html">Home - </a>Cart</p>
+            </div>
+            <div class="page_title">
+                <p>Cart</p>
+            </div>
+        </div>
+        
+        <!-- cart table -->
+        <table class="cart_table_mobile" cellspacing="0" cellpadding="5" align="center">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Product</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="img/Icon delete.svg"><br>
+                        <img class="product_cart_img" src="img/carcassonne.svg">
+                    </td>
+                    <td>
+                        <p>Carcassonne</p><br>
+                        <img src="img/Number-bar.svg">
+                    </td>
+                    <td>
+                        <span class="pre_price">$59.95</span><br>
+                        <span class="each_price">$44.95</span><br>
+                        <br>
+                        <span>Subtotal</span><br>
+                        <span class="true_price">$44.95</span>
+                        
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="cart_table_desktop" cellspacing="0" align="center">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="img/Icon delete.svg">
+                    </td>
+                    <td>
+                        <img class="product_cart_img" src="img/carcassonne.svg">
+                    </td>
+                    <td>
+                        <p>Carcassonne</p><br>
+                    </td>
+                    <td>
+                        <span class="each_price">$44.95</span><br>
+                        <span class="pre_price">$59.95</span><br>
+                    </td>
+                    <td>
+                        <img class="num_bar" src="img/Number-bar.svg">
+                    </td>
+                    <td>
+                        <span class="true_price">$44.95</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form class="coupon_contain">
+            <input type="text" placeholder="Coupon code">
+            <input type="button" value="APPLY COUPON">
+            <input class="update_cart" type="button" value="UPDATE CART">
+        </form>
+
+        <div class="cart_total_contain">
+            <h2 class="cart_total_title">Cart Totals</h2>
+            <table class="cart_total_table" cellspacing="0" align="center">
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$44.95</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>
+                        <span>Flat rate: $25.00</span><br>
+                        <span>Shipping to </span>
+                        <span class="city">Melbourne.</span><br>
+                        <span class="change_address">Change address</span>
+                        <img src="img/Icon material-local-shipping.svg">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td class="total_price">$69.95</td>
+                </tr>
+            </table>
+            <button class="proceed_checkout">PROCEED TO CHECKOUT</button>
+            <div class="clear"></div>
+        </div>
 
     </main>
 

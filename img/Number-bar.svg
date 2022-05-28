@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="85" height="30" viewBox="0 0 85 30">
+  <g id="Number-bar" transform="translate(-95 -784)">
+    <g id="square_51" data-name="square 51" transform="translate(95 784)" fill="#fff" stroke="#383428" stroke-width="1">
+      <rect width="85" height="30" rx="10" stroke="none"/>
+      <rect x="0.5" y="0.5" width="84" height="29" rx="9.5" fill="none"/>
+    </g>
+    <text id="_1" data-name="1" transform="translate(113 804)" fill="#383428" font-size="12" font-family="ArialMT, Arial"><tspan x="0" y="0">1</tspan></text>
+    <g id="square_52" data-name="square 52" transform="translate(150 784)" fill="#fff" stroke="#383428" stroke-width="1">
+      <rect width="30" height="30" rx="10" stroke="none"/>
+      <rect x="0.5" y="0.5" width="29" height="29" rx="9.5" fill="none"/>
+    </g>
+    <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M11.189,14.739l3.781-3.309a.785.785,0,0,1,1.009,0,.576.576,0,0,1,0,.885L11.7,16.064a.789.789,0,0,1-.985.018L6.4,12.318a.574.574,0,0,1,0-.885.786.786,0,0,1,1.009,0Z" transform="translate(153.813 792.754)" fill="#c6c6c6"/>
+    <path id="Icon_ionic-ios-arrow-up" data-name="Icon ionic-ios-arrow-up" d="M11.189,12.758l3.781,3.309a.785.785,0,0,0,1.009,0,.574.574,0,0,0,0-.885l-4.284-3.749a.789.789,0,0,0-.985-.018L6.4,15.179a.574.574,0,0,0,0,.885.785.785,0,0,0,1.009,0Z" transform="translate(153.813 777.749)" fill="#c6c6c6"/>
+  </g>
+</svg>

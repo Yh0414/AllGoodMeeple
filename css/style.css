@@ -1173,6 +1173,138 @@ h2 {
 }
 
 
+/* shopping cart */
+/* cart table mobile */
+.cart_table_desktop {
+    display: none;
+}
+.cart_table_mobile {
+    width: 355px;
+    margin: 40px auto 20px auto;
+}
+.cart_table_mobile thead th{
+    background-color: var(--colour-main);
+    color: white;
+    font-family: var(--font-primary);
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid var(--colour-bg-footer);
+}
+.cart_table_mobile tbody td{
+    background-color: var(--colour-text);
+    color: black;
+    border: none;
+    border-bottom: 2px solid var(--colour-bg-footer);
+    font-size: 12px;
+    text-align: center;
+    padding-top: 10px;
+}
+.product_cart_img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+.cart_table_mobile tbody td:nth-child(2) {
+    text-align: left;
+}
+.cart_table_mobile tbody td:nth-child(2) p {
+    margin: -10px auto 20px auto;
+}
+.cart_table_mobile .pre_price {
+    font-weight: normal;
+}
+.cart_table_mobile .each_price {
+    font-size: 14px;
+}
+.cart_table_mobile .true_price{
+    font-size: 15px;
+}
+/* coupon bar */
+.coupon_contain {
+    font-family: var(--font-secondary);
+    margin: auto;
+    margin-bottom: 50px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid var(--colour-text);
+}
+.coupon_contain input[type="text"] {
+    width: 350px;
+    height: 50px;
+    border: 2px solid var(--colour-bg-footer);
+    border-radius: 10px;
+    text-indent: 10px;
+    font-size: 15px;
+}
+.coupon_contain input[type="button"] {
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--colour-text);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 0 0 200px;
+    cursor: pointer;
+}
+.coupon_contain input[type="button"]:hover {
+    background-color: var(--colour-bg-footer);
+    transition: all 1s;
+}
+/* cart totals */
+.cart_total_title {
+    text-align: left;
+    margin-left: 10px;
+    font-family: var(--font-secondary);
+}
+.cart_total_table {
+    text-align: left;
+    margin-bottom: 30px;
+}
+.cart_total_table td {
+    padding: 20px;
+    border: 1px solid var(--colour-nav-mobile);
+}
+.cart_total_table tr td:nth-child(odd) {
+    background-color: var(--colour-main);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.cart_total_table tr td:nth-child(even) {
+    color: black;
+    font-size: 15px;
+}
+.cart_total_table img {
+    width: 20px;
+    height: 15px;
+}
+.total_price,
+.city {
+    font-weight: bold;
+}
+.change_address {
+    color: var(--colour-main);
+}
+.proceed_checkout {
+    width: 350px;
+    height: 40px;
+    box-shadow: none;
+    background-color: var(--colour-main);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.proceed_checkout:hover {
+    background-color: #CE4A0E;
+    transition: all 1s;
+}
+
+
+
 
 /* footer */
 footer {
@@ -1565,7 +1697,87 @@ footer {
     }
 
 
-
+    /* shopping cart */
+    /* cart table */
+    .cart_table_mobile {
+        display: none;
+    }
+    .cart_table_desktop {
+        display: block;
+        font-family: var(--font-secondary);
+        margin: 100px auto 50px 10vw;
+    }
+    .cart_table_desktop thead {
+        background-color: var(--colour-main);
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .cart_table_desktop th {
+        padding: 35px 70px;
+        border: 1px solid var(--colour-bg-footer);
+    }
+    .cart_table_desktop tbody {
+        background-color: var(--colour-text);
+        color: black;
+    }
+    .cart_table_desktop td {
+        padding: 20px 70px;
+        font-size: 35px;
+    }
+    .cart_table_desktop td img:nth-child(1) {
+        width: 50px;
+        height: 50px;
+    }
+    .product_cart_img {
+        transform: scale(2.5);
+    }
+    .num_bar {
+        transform: scale(2.5);
+    }
+    .cart_table_desktop .pre_price{
+        font-size: 25px;
+        font-weight: normal;
+    }
+    .cart_table_desktop .true_price {
+        font-size: 40px;
+    }
+    /* coupon */
+    .coupon_contain {
+        margin: auto 10vw 100px 10vw;
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        padding-bottom: 100px;
+        border-bottom: 2px solid var(--colour-text);
+    }
+    .coupon_contain input[type="button"] {
+        margin: auto 40px;
+    }
+    /* cart totals */
+    .cart_total_title {
+        margin-left: 10vw;
+    }
+    .cart_total_table td {
+        padding: 40px 100px;
+    }
+    .cart_total_table tr td:nth-child(odd) {
+        font-size: 50px;
+    }
+    .cart_total_table tr td:nth-child(even) {
+        font-size: 50px;
+        padding-right: 500px;
+    }
+    .cart_total_table img {
+        width: 70px;
+        height: 50px;
+    }
+    .proceed_checkout {
+        width: 500px;
+        height: 80px;
+        font-size: 30px;
+        float: right;
+        margin-right: 10vw;
+    }
 }
 
 

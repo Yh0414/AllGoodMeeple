@@ -1502,7 +1502,8 @@ h2 {
 .sum_up_arrow_rotate {
     transform: rotate(180deg);
 }
-#order_sum_table {
+#order_sum_table,
+.order_list_table {
     display: none;
     margin-top: 0;
     color: black;
@@ -1511,7 +1512,8 @@ h2 {
     text-align: left;
     margin: auto calc(10% - 15px);
 }
-#order_sum_table td {
+#order_sum_table td,
+.order_list_table td {
     width: 50vw;
     padding: 5px 25px;
     background-color: #EEEEEE;
@@ -1519,18 +1521,22 @@ h2 {
     line-height: 20px;
     vertical-align: middle;
 }
-#order_sum_table td:nth-child(even) {
+#order_sum_table td:nth-child(even),
+.order_list_table td:nth-child(even) {
     text-align: right;
 }
-#order_sum_table tr:last-child td:first-child {
+#order_sum_table tr:last-child td:first-child, 
+.order_list_table tr:last-child td:first-child {
     border-radius: 0 0 0 10px;
     box-shadow: 0px 3px 1px var(--colour-nav-mobile);
 }
-#order_sum_table tr:last-child td:last-child {
+#order_sum_table tr:last-child td:last-child,
+.order_list_table tr:last-child td:last-child {
     border-radius: 0 0 10px 0;
     box-shadow: 0px 3px 1px var(--colour-nav-mobile);
 }
-#order_sum_table tr:first-child td:first-child{
+#order_sum_table tr:first-child td:first-child,
+.order_list_table tr:first-child td:first-child {
     position: relative;
 }
 .order_sum_img {
@@ -1549,11 +1555,13 @@ h2 {
     left: 70px;
     top: 20px;
 }
-#order_sum_table .total_title {
+#order_sum_table .total_title,
+.order_list_table .total_title {
     font-size: 15px;
     font-weight: bold;
 }
-#order_sum_table .total_price {
+#order_sum_table .total_price ,
+.order_list_table .total_price{
     font-size: 18px;
     font-weight: bold;
 }
@@ -1642,6 +1650,75 @@ h2 {
 .privacy_policy > span {
     color: var(--colour-main);
 }
+
+/* checkout process step2 */
+.payment_step_active .circle {
+    background-color: var(--colour-main);
+    color: white;
+}
+.line_active1 {
+    background-color: var(--colour-main);
+}
+.order_list table {
+    display: block;
+}
+.order_list > h2,
+.payment_method_contain > h2 {
+    margin: 60px calc(10% - 15px) 25px;
+    text-align: left;
+}
+.order_list_table tr:first-child td:first-child {
+    border-radius: 10px 0 0 0;
+}
+.order_list_table tr:first-child td:last-child {
+    border-radius: 0 10px 0 0;
+}
+/* payment methos */
+.payment_method_contain div {
+    width: 80%;
+    height: 40px;
+    margin: 20px auto 0 auto;
+    padding: 20px 15px 0 15px;
+    background-color: #EEEEEE;
+    color: black;
+    text-align: left;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.payment_checkbox {
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid var(--colour-main);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 20px;
+    margin-right: 20px;
+}
+.option1 > input[type="checkbox"],
+.option2 > input[type="checkbox"] {
+    display: none;
+}
+.option1 > input[type="checkbox"]:checked + .payment_checkbox,
+.option2 > input[type="checkbox"]:checked + .payment_checkbox {
+    position: relative;
+}
+.option1 > input[type="checkbox"]:checked + .payment_checkbox::after,
+.option2 > input[type="checkbox"]:checked + .payment_checkbox::after {
+    content: "";
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background: var(--colour-main);
+    border: white solid 2px;
+    height: 12px;
+    width: 12px;
+}
+
 
 
 
@@ -2167,12 +2244,14 @@ footer {
         width: 50px;
         height: 50px;
     }
-    #order_sum_table {
+    #order_sum_table,
+    .order_list_table {
         width: 800px;
         font-size: 20px;
         margin: 0 auto;
     }
-    #order_sum_table td {
+    #order_sum_table td,
+    .order_list_table td {
         padding: 5px 25px;
         line-height: 50px;
     }
@@ -2194,10 +2273,12 @@ footer {
         left: 150px;
         top: 50px;
     }
-    #order_sum_table .total_title {
+    #order_sum_table .total_title,
+    .order_list_table .total_title {
         font-size: 25px;
     }
-    #order_sum_table .total_price {
+    #order_sum_table .total_price,
+    .order_list_table .total_price {
         font-size: 30px;
     }
     /* billing detail + shipping detail */
@@ -2222,6 +2303,14 @@ footer {
         text-align: right;
         font-size: 30px;
         margin-right: 10%;
+    }
+    /* payment method */
+    .payment_method_contain div {
+        width: 750px;
+        height: 70px;
+        font-size: 30px;
+        padding: 20px 25px 0;
+        margin: 20px auto;
     }
 }
 

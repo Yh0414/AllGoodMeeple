@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/checkout_process.js"></script>
     <script>
         $(document).ready(function(){
            
@@ -31,7 +32,209 @@
     
     <!-- checkout process main -->
     <main>
+        <!-- page title -->
+        <div class="page_title_contain">
+            <div class="page_nav">
+                <p><a href="/index.html">Home - </a>Checkout</p>
+            </div>
+            <div class="page_title">
+                <p>Checkout</p>
+            </div>
+        </div>
+        
+        <!-- process shown bar -->
+        <ol class="process_shown_contain">
+            <li class="shipping_step1">
+                <div class="circle step_now">1</div>
+                <p>Shipping</p>
+            </li>
+            <li class="line_between"></li>
+            <li class="payment_step2">
+                <div class="circle">2</div>
+                <p>Payment</p>
+            </li>
+            <li class="line_between"></li>
+            <li class="shipping_step3">
+                <div class="circle">3</div>
+                <p>Confirmation</p>
+            </li>
+        </ol>
 
+        <div class="order_sum_coupon_contain">
+            <!-- coupon -->
+            <div>
+                <div class="expand_coupon_bnt_contain">
+                    <img src="img/Icon web.svg">
+                    <span>
+                        Have a coupon?
+                        <a onclick=showCoupon()>Click here to enter your code</a>
+                    </span>
+                </div>
+                <div id="coupon_enter_contain">
+                    <p>If you have a couponn code, please apply it below</p>
+                    <input type="text" placeholder="Coupon code"><br>
+                    <input type="button" value="APPLY COUPON">
+                </div>
+            </div>
+
+            <!-- order summary -->
+            <div class="order_sum_contain">
+                <div class="expand_order_sum_contain" onclick=showOrderSum()>
+                        <img src="img/Icon shopping_cart.svg">
+                        <span>Show order summary</span>
+                        <img class="sum_up_arrow" src="img/Icon arrow-up-red.svg">
+                        <span class="total_price">$69.95</span>
+                </div>
+                <table id="order_sum_table" cellspacing="0" align="center">
+                    <tr>
+                        <td> 
+                            <img class="one_item" src="img/Icon one-item.svg">
+                            <img class="order_sum_img" src="img/carcassonne.svg">
+                            <span class="item_title">Carcassonne</span>
+                        </td>
+                        <td>$44.95</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Subtotal</span>
+                            <br>
+                            <span>Shipping</span>
+                        </td>
+                        <td>
+                            <span>$44.95</span>
+                            <br>
+                            <span>Flat rate: $25.00</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="total_title">Total</span>
+                            <br>
+                            <span>Including $4.09 in taxes</span>
+                        </td>
+                        <td>
+                            <span>AUD</span>
+                            <span class="total_price"> $69.95</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="details_contain">
+            <div class="billing_detail">
+                <h2>Billing Details</h2>
+                <form>
+                    <div>
+                        <div>
+                            <label>First name <span>*</span></label><br>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label>Last name <span>*</span></label><br>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div>
+                        <label>Company name (optional)</label><br>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Country / Region <span>*</span></label><br>
+                        <input type="text" placeholder="Australia">
+                    </div>
+                    <div>
+                        <label>Street address <span>*</span></label><br>
+                        <input type="text" placeholder="House number and streeet name">
+                        <input type="text" placeholder="Apartment, suit, unit, etc.(optional)">
+                    </div>
+                    <div>
+                        <label>Town / City <span>*</span></label><br>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Province <span>*</span></label><br>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Postcode / ZIP <span>*</span></label><br>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Phone <span>*</span></label><br>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Email address <span>*</span></label><br>
+                        <input type="text">
+                    </div>
+                </form>
+            </div>
+
+            <div class="shipping_detail">
+                <h2>
+                    <div>Ship to a different address?</div>
+                    <input type="checkbox" class="shipping_checkbox" checked="checked" onchange="showShipDetail()">
+                </h2>
+                <form id="ship_form">
+                    <div>
+                        <div>
+                            <label>First name <span>*</span></label><br>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label>Last name <span>*</span></label><br>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div>
+                        <label>Company name (optional)</label><br>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Country / Region <span>*</span></label><br>
+                        <input type="text" placeholder="Australia">
+                    </div>
+                    <div>
+                        <label>Street address <span>*</span></label><br>
+                        <input type="text" placeholder="House number and streeet name">
+                        <input type="text" placeholder="Apartment, suit, unit, etc.(optional)">
+                    </div>
+                    <div>
+                        <label>Town / City <span>*</span></label><br>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Province <span>*</span></label><br>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Postcode / ZIP <span>*</span></label><br>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Phone <span>*</span></label><br>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Email address <span>*</span></label><br>
+                        <input type="text">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="ship_bnts">
+            <div class="return_to_cart">
+                <a href="">
+                    <img src="img/Icon back-left.svg">
+                    Return to cart
+                </a>
+            </div>
+            <div>
+                <button>PLACE ORDER</button>
+                <p class="privacy_policy">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our <span>privacy policy</span>.</p>
+            </div>
+        </div>
     </main>
     
     <!-- footer -->

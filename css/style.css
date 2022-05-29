@@ -1674,11 +1674,10 @@ h2 {
     border-radius: 0 10px 0 0;
 }
 /* payment methos */
-.payment_method_contain div {
+.payment_method_contain > div {
     width: 80%;
-    height: 40px;
     margin: 20px auto 0 auto;
-    padding: 20px 15px 0 15px;
+    padding: 20px 15px;
     background-color: #EEEEEE;
     color: black;
     text-align: left;
@@ -1718,6 +1717,56 @@ h2 {
     height: 12px;
     width: 12px;
 }
+.method_bnt {
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    color: var(--colour-text);
+    border: 2px solid var(--colour-bg-footer);
+    border-radius: 10px;
+    font-weight: bold;
+}
+.method_bnt:nth-child(3){
+    width: 80px;
+}
+.method_bnt_active,
+.method_bnt:hover {
+    border: none;
+    background-color: var(--colour-bg-footer);
+    color: white;
+}
+.payment_form {
+    font-family: var(--font-secondary);
+    font-size: 15px;
+}
+.payment_form > div {
+    margin: 15px auto;
+}
+.payment_form input {
+    width: 99%;
+    height: 30px;
+    border: 2px solid var(--colour-text);
+    border-radius: 10px;
+    text-indent: 10px;
+}
+.master_pay {
+    width: 60px;
+    height: 40px;
+    float: right;
+    margin-top: -30px;
+}
+.vali_cvv {
+    display: flex;
+    justify-content: space-between;
+}
+.vali_cvv > div {
+    width: 40%;
+}
+.ship_bnts_step2 {
+    margin: 25px 0;
+}
+
+
 
 
 
@@ -2305,13 +2354,17 @@ footer {
         margin-right: 10%;
     }
     /* payment method */
-    .payment_method_contain div {
+    .payment_content_contain {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .payment_method_contain > div {
         width: 750px;
-        height: 70px;
         font-size: 30px;
-        padding: 20px 25px 0;
+        padding: 20px 25px;
         margin: 20px auto;
     }
+    
 }
 
 

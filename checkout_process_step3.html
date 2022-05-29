@@ -53,14 +53,14 @@
                 <div class="circle">2</div>
                 <p>Payment</p>
             </li>
-            <li class="line_between"></li>
-            <li class="shipping_step3">
+            <li class="line_between line_active1"></li>
+            <li class="shipping_step3 payment_step_active">
                 <div class="circle">3</div>
                 <p>Confirmation</p>
             </li>
         </ol>
 
-        <div class="payment_content_contain">
+        <div class="confirm_content_contain">
             <div class="order_list order_sum_contain">
                 <h2>Order List</h2>
                 <table class="order_list_table" cellspacing="0" align="center">
@@ -97,56 +97,20 @@
                     </tr>
                 </table>
             </div>
-            <div class="payment_method_contain">
-                <h2>Payment Method</h2>
-                <div class="option1">
-                    <input type="checkbox">
-                    <span class="payment_checkbox"></span>
-                    <span>Cash on collection from Cheddar</span>
-                </div>
-                <div class="option2">
-                    <input type="checkbox" checked="checked">
-                    <span class="payment_checkbox"></span>
-                    <span>Debit or Paypal payment</span>
-                </div>
+
+            <div class="confirmation_contain">
+                <h2>Confirmation</h2>
                 <div>
-                    <div class="method ">
-                        <button class="method_bnt method_bnt_active">Master Card</button>
-                        <button class="method_bnt">Debit Card</button>
-                        <button class="method_bnt">Paypal</button>
-                    </div>
-                    <form class="payment_form">
-                        <div class="card_no_contain">
-                            <label>Card No.</label><br>
-                            <img class="master_pay" src="img/mastercard.svg">
-                            <input type="text" placeholder="9999 9999 9999 9999">
-                        </div>
-                        <div class="vali_cvv">
-                            <div>
-                                <label>Validity</label><br>
-                                <input type="text" placeholder="29/05/2032">
-                            </div>
-                            <div>
-                                <label>CVV</label><br>
-                                <input type="text" placeholder="***">
-                            </div>
-                        </div>
-                        <div>
-                            <label>Card Holder Name</label><br>
-                            <input type="text" placeholder="Yahong Pan">
-                        </div>
-                    </form>
+                    <div><img src="img/Icon checkmark.svg"></div>
+                    <div>Your order is Complete</div>
+                    <div>Sit back and relax. Your express package is arriving in 1 day</div>
                 </div>
             </div>
         </div>
-        <div class="ship_bnts ship_bnts_step2">
-            <div class="return_to_cart">
-                <a href="">
-                    <img src="img/Icon back-left.svg">
-                    Return to cart
-                </a>
-            </div>
-            <a href="/checkout_process_step3.html"><button>CHECK OUT</button></a>
+
+        <div class="ship_bnts ship_bnts_step3">
+            <a href="/index.html"><button>GO TO HOME</button></a>
+            <button>TRACK YOUR ORDER</button>
         </div>
     </main>
 

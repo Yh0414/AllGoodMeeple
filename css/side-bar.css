@@ -5,6 +5,7 @@
     --colour-bg-footer:#383428;
     --colour-text: #C6C6C6;
     --colour-main:#F9943B;
+    --colour-main-hover:#CE4A0E;
     --font-primary: "Segoe UI", sans-serif;
     --font-secondary: Arial, serif;
     --text-base-size: 20px;
@@ -60,7 +61,7 @@ button {
 .side-bar > a {
     width: 40px;
     height: 40px;
-    background-color: #CE4A0E;
+    background-color: var(--colour-main-hover);
     margin: 2px 0;
 }
 

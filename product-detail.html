@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        $(document).ready(function(){
+           
+           $('#head-nav').load("head-nav.html");
+           $('#foot').load("foot.html");
+           $('#category-nav').load("category-nav.html");
+           $('#side-bar').load("side-bar.html");
+        
+        });
+    </script>
+    <title>All Good Meeple - Product Detail</title>
+</head>
+<body>
+    <!-- head navigation bar -->
+    <div id="head-nav"></div>
+
+    <!-- category navigation bar -->
+    <div id="category-nav"></div>
+
+    <!-- side bar -->
+    <div id="side-bar"></div>
+
+    <main>
+        <!-- page title -->
+        <div class="page-title-contain">
+            <div class="page-nav">
+                <p> <a href="/index.html">Home - </a>
+                    <a href="/product-list.html">Board Games - </a>
+                    Carcassonne
+                </p>
+            </div>
+            <div class="page-title">
+                <p>Carcassonne</p>
+            </div>
+        </div>
+
+        <div class="product-img-and-price-detail-contain">
+            <!-- Product image detail shown -->
+            <div class="product-imgs-contain">
+                <div class="imgs-list-desktop">
+                    <img class="img-list" src="img/carcassonne.svg"><br>
+                    <img class="img-list" src="img/carcassonne-front.svg"><br>
+                    <img class="img-list" src="img/carcassonne-inside.svg"><br>
+                </div>
+                <div class="main-img-shown">
+                    <div class="best-sale-contain">Best Seller</div>
+                    <img class="product-main-img" src="img/carcassonne.svg">
+                    <div class="arrow-circle">
+                        <img src="img/Icon-arrow-left-circle.svg">
+                        <img src="img/Icon-arrow-right-circle.svg">
+                    </div>
+                    <div class="zoom-in-desktop">
+                        <img src="img/Icon-zoom-in.svg">
+                        ZOOM
+                    </div>
+                </div>
+                <div class="zoom-in">
+                    <img src="img/Icon-zoom-in.svg">
+                    ZOOM
+                </div>
+                <div class="imgs-list">
+                    <img class="img-list" src="img/carcassonne.svg">
+                    <img class="img-list" src="img/carcassonne-front.svg">
+                    <img class="img-list" src="img/carcassonne-inside.svg">
+                </div>
+            </div>
+
+            <!-- producy sale and stock tag + title and price information + checkout and add to cart buttons -->
+            <div class="product-title-price-contain">
+                <div class="sale-stock-tags">
+                    <span class="sale-info">Sale -26%</span>
+                    <span class="stock-info">In stock</span>
+                </div>
+                <div class="product-title">Carcassonne</div>
+                <img class="star-rate" src="img/Icon-5-star-rate.svg">
+                <div class="detail-price-contain">
+                    <span class="true-price">$34.95</span>
+                    <span>
+                        <span class="pre-price">$28.65</span>
+                        <br>
+                        <span >You save</span >
+                        <span class="save-price">$15.00</span>
+                    </span>
+                </div>
+                <div class="check-out-bnt-contain">
+                    <a href="/login.html">
+                        <button class="check-out-bnt">CHECKOUT NOW</button>
+                    </a>
+                </div>
+                <div class="num-cart-wish">
+                    <div>1</div>
+                    <button>ADD TO CART</button>
+                    <img src="img/Icon-wish-list-orange.svg">
+                </div>
+                <!-- product category, tags, and product id -->
+                <div class="product-info-contain">
+                    <div>
+                        <span class="product-info-title">CATEGORY: </span >
+                        Board Games
+                    </div>
+                    <div>
+                        <span  class="product-info-title">TAGS: </span >
+                        family, strategy
+                    </div>
+                    <div>
+                        <span class="product-info-title">PRODUCT ID: </span>
+                        ZMG78100
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-description">
+            <button>Description</button>
+            <button>Additional Information</button>
+            <button>Reviews (2)</button>
+            <div class="description-content">
+                <p>Award winning tile-laying game in which you develop the landscape of cities, roads, cloisters and farms, and deploy your followers strategically as the map develops, to earn you the most points by the end of the game. Easy to learn, ideal beginners' game, simple scoring, for 2-5 players aged 8 and up. Allow 45 minutes to play. Many additional expansions are available to bring variety to the basic game. Entirely redesigned and modernized, this new edition includes two expansions: The River and the Abbot.</p>
+            </div>
+        </div>
+
+        <div class="related-product-contain">
+            <h2>Related Products</h2>
+
+            <div class="featured-product-contain">
+                <div class="each-block">
+                    <div class="one-product">
+                        <span class="game-type">Board game</span>
+
+                        <div class="sale-contain">
+                            <span>Sale</span>
+                            <span>-22%</span>
+                        </div>
+
+                        <div class="product-img-contain">
+                            <a>
+                                <img src="img/downforce.png">
+                            </a>
+                        </div>
+
+                        <div class="out-of-stock">Out of stock</div>
+
+                        <div class="product-name">
+                            <span>Downforce</span>
+                        </div>
+
+                        <div class="price-contain">
+                            <span class="true-price">$54.95</span>
+                            <span class="pre-price">$69.94</span>
+                        </div>
+
+                        <div class="product-button-contain">
+                            <button class="add-to-cart disabled">+ ADD TO CART</button>
+                            <button class="add-to-wish-list">
+                                <img src="img/Icon-side-wish-list.svg">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="each-block">
+                    <div class="one-product">
+                        <span class="game-type">Board game</span>
+
+                        <div class="product-img-contain">
+                            <a>
+                                <img src="img/battlesheep.jpg">
+                            </a>
+                        </div>
+
+                        <span class="product-name">Battle Sheep</span>
+
+                        <div class="price-contain">
+                            <span class="true-price">$23.95</span>
+                        </div>
+
+                        <div class="product-button-contain">
+                            <button class="add-to-cart">+ ADD TO CART</button>
+                            <button class="add-to-wish-list">
+                                <img src="img/Icon-side-wish-list.svg">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="each-block">
+                    <div class="one-product">
+                        <span class="game-type">Board game</span>
+
+                        <div class="product-img-contain">
+                            <a>
+                                <img src="img/HerbWitches.png">
+                            </a>
+                        </div>
+
+                        <div class="out-of-stock">Out of stock</div>
+
+                        <div class="product-name">
+                            <span>The Quacks of Quedlinburg</span>
+                            <br>
+                            <span>- Herb Witches Expansion</span>
+                        </div>
+
+                        <div class="price-contain">
+                            <span class="true-price">$18.95</span>
+                        </div>
+
+                        <div class="product-button-contain">
+                            <button class="add-to-cart disabled">+ ADD TO CART</button>
+                            <button class="add-to-wish-list">
+                                <img src="img/Icon-side-wish-list.svg">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="each-block">
+                    <div class="one-product">
+                        <span class="game-type">Board game</span>
+
+                        <div class="best-sale-contain">Best Seller</div>
+
+                        <div class="product-img-contain">
+                            <a>
+                                <img src="img/forbidden-island.jpg">
+                            </a>
+                        </div>
+
+                        <div class="out-of-stock">Out of stock</div>
+
+                        <span class="product-name">Forbidden Island</span>
+
+                        <div class="price-contain">
+                            <span class="true-price">$20.95</span>
+                        </div>
+
+                        <div class="product-button-contain">
+                            <button class="add-to-cart disabled">+ ADD TO CART</button>
+                            <button class="add-to-wish-list">
+                                <img src="img/Icon-side-wish-list.svg">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="feat-bnt more-bnt-related">MORE</button>
+            <div class="clear"></div>
+        </div>
+
+    </main>
+
+    <!-- footer -->
+    <div id="foot"></div>
+</body>
+</html>

@@ -1,8 +1,8 @@
 function validateForm() {
-    let x = document.forms["login_form"]["name"].value;
-    let y= document.forms["login_form"]["email"].value;
-    let z = document.forms["login_form"]["password"].value;
-    let w = document.forms["login_form"]["confirm_password"].value;
+    let x = document.forms["login-form"]["name"].value;
+    let y= document.forms["login-form"]["email"].value;
+    let z = document.forms["login-form"]["password"].value;
+    let w = document.forms["login-form"]["confirm-password"].value;
 
     if (x == "") 
     {

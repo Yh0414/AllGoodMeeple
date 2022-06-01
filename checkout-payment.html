@@ -7,68 +7,68 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/checkout_process.js"></script>
+    <script src="js/checkout-process.js"></script>
     <script>
         $(document).ready(function(){
            
-           $('#head_nav').load("head_nav.html");
+           $('#head-nav').load("head-nav.html");
            $('#foot').load("foot.html");
-           $('#category_nav').load("category_nav.html");
-           $('#side_bar').load("side_bar.html");
+           $('#category-nav').load("category-nav.html");
+           $('#side-bar').load("side-bar.html");
         
         });
-    </script>     
+    </script>   
     <title>All Good Meeple - Checkout Process</title>
 </head>
 <body>
     <!-- head navigation bar -->
-    <div id="head_nav"></div>
+    <div id="head-nav"></div>
 
     <!-- category navigation bar -->
-    <div id="category_nav"></div>
+    <div id="category-nav"></div>
 
     <!-- side bar -->
-    <div id="side_bar"></div>
+    <div id="side-bar"></div>
     
     <!-- checkout process main -->
     <main>
         <!-- page title -->
-        <div class="page_title_contain">
-            <div class="page_nav">
+        <div class="page-title-contain">
+            <div class="page-nav">
                 <p><a href="/index.html">Home - </a>Checkout</p>
             </div>
-            <div class="page_title">
+            <div class="page-title">
                 <p>Checkout</p>
             </div>
         </div>
         
         <!-- process shown bar -->
-        <ol class="process_shown_contain">
-            <li class="shipping_step1">
-                <div class="circle step_now">1</div>
+        <ol class="process-shown-contain">
+            <li class="shipping-step1">
+                <div class="circle step-now">1</div>
                 <p>Shipping</p>
             </li>
-            <li class="line_between line_active1"></li>
-            <li class="payment_step2 payment_step_active">
+            <li class="line-between line-active1"></li>
+            <li class="payment-step2 payment-step-active">
                 <div class="circle">2</div>
                 <p>Payment</p>
             </li>
-            <li class="line_between"></li>
-            <li class="shipping_step3">
+            <li class="line-between"></li>
+            <li class="shipping-step3">
                 <div class="circle">3</div>
                 <p>Confirmation</p>
             </li>
         </ol>
 
-        <div class="payment_content_contain">
-            <div class="order_list order_sum_contain">
+        <div class="payment-content-contain">
+            <div class="order-list order-sum-contain">
                 <h2>Order List</h2>
-                <table class="order_list_table" cellspacing="0" align="center">
+                <table class="order-list-table" cellspacing="0" align="center">
                     <tr>
                         <td> 
-                            <img class="one_item" src="img/Icon one-item.svg">
-                            <img class="order_sum_img" src="img/carcassonne.svg">
-                            <span class="item_title">Carcassonne</span>
+                            <img class="one-item" src="img/Icon-one-item.svg">
+                            <img class="order-sum-img" src="img/carcassonne.svg">
+                            <span class="item-title">Carcassonne</span>
                         </td>
                         <td>$44.95</td>
                     </tr>
@@ -86,42 +86,42 @@
                     </tr>
                     <tr>
                         <td>
-                            <span class="total_title">Total</span>
+                            <span class="total-title">Total</span>
                             <br>
                             <span>Including $4.09 in taxes</span>
                         </td>
                         <td>
                             <span>AUD</span>
-                            <span class="total_price"> $69.95</span>
+                            <span class="total-price"> $69.95</span>
                         </td>
                     </tr>
                 </table>
             </div>
-            <div class="payment_method_contain">
+            <div class="payment-method-contain">
                 <h2>Payment Method</h2>
                 <div class="option1">
                     <input type="checkbox">
-                    <span class="payment_checkbox"></span>
+                    <span class="payment-checkbox"></span>
                     <span>Cash on collection from Cheddar</span>
                 </div>
                 <div class="option2">
                     <input type="checkbox" checked="checked">
-                    <span class="payment_checkbox"></span>
+                    <span class="payment-checkbox"></span>
                     <span>Debit or Paypal payment</span>
                 </div>
                 <div>
                     <div class="method ">
-                        <button class="method_bnt method_bnt_active">Master Card</button>
-                        <button class="method_bnt">Debit Card</button>
-                        <button class="method_bnt">Paypal</button>
+                        <button class="method-bnt method-bnt-active">Master Card</button>
+                        <button class="method-bnt">Debit Card</button>
+                        <button class="method-bnt">Paypal</button>
                     </div>
-                    <form class="payment_form">
-                        <div class="card_no_contain">
+                    <form class="payment-form">
+                        <div class="card-no-contain">
                             <label>Card No.</label><br>
-                            <img class="master_pay" src="img/mastercard.svg">
+                            <img class="master-pay" src="img/mastercard.svg">
                             <input type="text" placeholder="9999 9999 9999 9999">
                         </div>
-                        <div class="vali_cvv">
+                        <div class="vali-cvv">
                             <div>
                                 <label>Validity</label><br>
                                 <input type="text" placeholder="29/05/2032">
@@ -139,14 +139,14 @@
                 </div>
             </div>
         </div>
-        <div class="ship_bnts ship_bnts_step2">
-            <div class="return_to_cart">
-                <a href="/Shopping Cart.html">
-                    <img src="img/Icon back-left.svg">
+        <div class="ship-bnts ship-bnts-step2">
+            <div class="return-to-cart">
+                <a href="/shopping-cart.html">
+                    <img src="img/Icon-back-left.svg">
                     Return to cart
                 </a>
             </div>
-            <a href="/checkout_process_step3.html"><button>CHECK OUT</button></a>
+            <a href="/checkout-confirmation.html"><button>CHECK OUT</button></a>
         </div>
     </main>
 

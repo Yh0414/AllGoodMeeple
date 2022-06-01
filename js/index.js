@@ -1,6 +1,6 @@
 window.onload = function() {
-	var carouImg = document.getElementById("carousel_images");
-	var carouWrap = document.getElementById("carousel_wrap");
+	var carouImg = document.getElementById("carousel-images");
+	var carouWrap = document.getElementById("carousel-wrap");
 	var img = carouImg.getElementsByTagName("img")[0];
 	var leftArrow = document.getElementsByClassName("left-arrow")[0];
 	var rightArrow = document.getElementsByClassName("right-arrow")[0];

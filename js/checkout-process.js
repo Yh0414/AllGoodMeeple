@@ -1,5 +1,5 @@
 function showCoupon() {
-    const a = document.getElementById("coupon_enter_contain");
+    var a = document.getElementById("coupon-enter-contain");
 
     if (a.style.display == "none") {
         a.style.display = "block";
@@ -9,20 +9,20 @@ function showCoupon() {
 }
 
 function showOrderSum() {
-    const b = document.getElementById("order_sum_table");
-    const c = document.getElementsByClassName("sum_up_arrow");
+    var b = document.getElementById("order-sum-table");
+    var c = document.getElementsByClassName("sum-up-arrow");
 
     if (b.style.display == "none") {
         b.style.display = "block";
-        c[0].classList.add("sum_up_arrow_rotate");
+        c[0].classList.add("sum-up-arrow-rotate");
     } else {
         b.style.display = "none";
-        c[0].classList.remove("sum_up_arrow_rotate");
+        c[0].classList.remove("sum-up-arrow-rotate");
     }
 }
 
 function showShipDetail() {
-    const d = document.getElementById("ship_form");
+    var d = document.getElementById("ship-form");
 
     if (d.style.display == "none") {
         d.style.display = "block";

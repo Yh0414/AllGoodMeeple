@@ -7,70 +7,70 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/checkout_process.js"></script>
+    <script src="js/checkout-process.js"></script>
     <script>
         $(document).ready(function(){
            
-           $('#head_nav').load("head_nav.html");
+           $('#head-nav').load("head-nav.html");
            $('#foot').load("foot.html");
-           $('#category_nav').load("category_nav.html");
-           $('#side_bar').load("side_bar.html");
+           $('#category-nav').load("category-nav.html");
+           $('#side-bar').load("side-bar.html");
         
         });
-    </script>     
+    </script>    
     <title>All Good Meeple - Checkout Process</title>
 </head>
 <body>
     <!-- head navigation bar -->
-    <div id="head_nav"></div>
+    <div id="head-nav"></div>
 
     <!-- category navigation bar -->
-    <div id="category_nav"></div>
+    <div id="category-nav"></div>
 
     <!-- side bar -->
-    <div id="side_bar"></div>
+    <div id="side-bar"></div>
     
     <!-- checkout process main -->
     <main>
         <!-- page title -->
-        <div class="page_title_contain">
-            <div class="page_nav">
+        <div class="page-title-contain">
+            <div class="page-nav">
                 <p><a href="/index.html">Home - </a>Checkout</p>
             </div>
-            <div class="page_title">
+            <div class="page-title">
                 <p>Checkout</p>
             </div>
         </div>
         
         <!-- process shown bar -->
-        <ol class="process_shown_contain">
-            <li class="shipping_step1">
-                <div class="circle step_now">1</div>
+        <ol class="process-shown-contain">
+            <li class="shipping-step1">
+                <div class="circle step-now">1</div>
                 <p>Shipping</p>
             </li>
-            <li class="line_between"></li>
-            <li class="payment_step2">
+            <li class="line-between"></li>
+            <li class="payment-step2">
                 <div class="circle">2</div>
                 <p>Payment</p>
             </li>
-            <li class="line_between"></li>
-            <li class="shipping_step3">
+            <li class="line-between"></li>
+            <li class="shipping-step3">
                 <div class="circle">3</div>
                 <p>Confirmation</p>
             </li>
         </ol>
 
-        <div class="order_sum_coupon_contain">
+        <div class="order-sum-coupon-contain">
             <!-- coupon -->
             <div>
-                <div class="expand_coupon_bnt_contain">
-                    <img src="img/Icon web.svg">
+                <div class="expand-coupon-bnt-contain">
+                    <img src="img/Icon-web.svg">
                     <span>
                         Have a coupon?
                         <a onclick=showCoupon()>Click here to enter your code</a>
                     </span>
                 </div>
-                <div id="coupon_enter_contain">
+                <div id="coupon-enter-contain">
                     <p>If you have a couponn code, please apply it below</p>
                     <input type="text" placeholder="Coupon code"><br>
                     <input type="button" value="APPLY COUPON">
@@ -78,19 +78,19 @@
             </div>
 
             <!-- order summary -->
-            <div class="order_sum_contain">
-                <div class="expand_order_sum_contain" onclick=showOrderSum()>
-                        <img src="img/Icon shopping_cart.svg">
+            <div class="order-sum-contain">
+                <div class="expand-order-sum-contain" onclick=showOrderSum()>
+                        <img src="img/Icon-shopping-cart.svg">
                         <span>Show order summary</span>
-                        <img class="sum_up_arrow" src="img/Icon arrow-up-red.svg">
-                        <span class="total_price">$69.95</span>
+                        <img class="sum-up-arrow" src="img/Icon-arrow-up-red.svg">
+                        <span class="total-price">$69.95</span>
                 </div>
-                <table id="order_sum_table" cellspacing="0" align="center">
+                <table id="order-sum-table" cellspacing="0" align="center">
                     <tr>
                         <td> 
-                            <img class="one_item" src="img/Icon one-item.svg">
-                            <img class="order_sum_img" src="img/carcassonne.svg">
-                            <span class="item_title">Carcassonne</span>
+                            <img class="one-item" src="img/Icon-one-item.svg">
+                            <img class="order-sum-img" src="img/carcassonne.svg">
+                            <span class="item-title">Carcassonne</span>
                         </td>
                         <td>$44.95</td>
                     </tr>
@@ -108,21 +108,21 @@
                     </tr>
                     <tr>
                         <td>
-                            <span class="total_title">Total</span>
+                            <span class="total-title">Total</span>
                             <br>
                             <span>Including $4.09 in taxes</span>
                         </td>
                         <td>
                             <span>AUD</span>
-                            <span class="total_price"> $69.95</span>
+                            <span class="total-price"> $69.95</span>
                         </td>
                     </tr>
                 </table>
             </div>
         </div>
 
-        <div class="details_contain">
-            <div class="billing_detail">
+        <div class="details-contain">
+            <div class="billing-detail">
                 <h2>Billing Details</h2>
                 <form>
                     <div>
@@ -171,12 +171,12 @@
                 </form>
             </div>
 
-            <div class="shipping_detail">
+            <div class="shipping-detail">
                 <h2>
                     <div>Ship to a different address?</div>
-                    <input type="checkbox" class="shipping_checkbox" checked="checked" onchange="showShipDetail()">
+                    <input type="checkbox" class="shipping-checkbox" checked="checked" onchange="showShipDetail()">
                 </h2>
-                <form id="ship_form">
+                <form id="ship-form">
                     <div>
                         <div>
                             <label>First name <span>*</span></label><br>
@@ -223,16 +223,16 @@
                 </form>
             </div>
         </div>
-        <div class="ship_bnts">
-            <div class="return_to_cart">
-                <a href="/Shopping Cart.html">
-                    <img src="img/Icon back-left.svg">
+        <div class="ship-bnts">
+            <div class="return-to-cart">
+                <a href="/shopping-cart.html">
+                    <img src="img/Icon-back-left.svg">
                     Return to cart
                 </a>
             </div>
             <div>
-                <a href="/checkout_process_step2.html"><button>PLACE ORDER</button></a>
-                <p class="privacy_policy">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our <span>privacy policy</span>.</p>
+                <a href="/checkout-payment.html"><button>PLACE ORDER</button></a>
+                <p class="privacy-policy">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our <span>privacy policy</span>.</p>
             </div>
         </div>
     </main>

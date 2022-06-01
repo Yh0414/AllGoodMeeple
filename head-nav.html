@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/head_nav.js"></script>
+    <script src="js/head-nav.js"></script>
     <title>Head Navigations</title>
 </head>
 <body>
     <header>
         <!-- nav desktop version -->
-        <nav class="nav_desktop">
+        <nav class="nav-desktop">
             <div>
-                <ul class="header_nav nav_desktop">
+                <ul class="header-nav nav-desktop">
                     <li><a class="btn" href="/index.html">Home</a></li>
-                    <li id="head_cate"><a class="btn">Categories</a>
-                        <ul id="head_category_list">
-                            <li><a href="/product_list.html">Board Games</a></li>
+                    <li id="head-cate"><a class="btn">Categories</a>
+                        <ul id="head-category-list">
+                            <li><a href="/product-list.html">Board Games</a></li>
                             <li><a>Card Games</a></li>
                             <li><a>Dice Games</a></li>
                             <li><a>Quiz Games</a></li>
@@ -35,48 +35,48 @@
                 </ul>
             </div>
             <div>
-                <ul class="header_login nav_desktop">
+                <ul class="header-login nav-desktop">
                     <li><a class="btn btn-main" href="/index.html">Home</a></li>
-                    <li><a class="btn btn-main" href="/Shopping Cart.html">My Cart</a></li>
+                    <li><a class="btn btn-main" href="/shopping-cart.html">My Cart</a></li>
                     <li><a class="btn btn-main">Wish List</a></li>
                     <li><a class="btn btn-main" href="/login.html">Login</a></li>
                 </ul>
             </div>
-            <div class="social_icons nav_desktop">
-                <img src="img/Icon_facebook.svg" alt="facebook" class="social_logo">
-                <img src="img/Icon_instagram.svg" alt="instagram" class="social_logo">
-                <img src="img/Icon_twitter.svg" alt="twitter" class="social_logo">
+            <div class="social-icons nav-desktop">
+                <img src="img/Icon-facebook.svg" alt="facebook" class="social-logo">
+                <img src="img/Icon-instagram.svg" alt="instagram" class="social-logo">
+                <img src="img/Icon-twitter.svg" alt="twitter" class="social-logo">
             </div>
         </nav>
 
 
         <!-- nav mobile version -->
-        <div class="nav_mobile_contain">
-            <div class="nav_mobile">
-                <div class="logo_mobile">
-                    <img src="img/mobile_ver_logo.svg" alt="logo_mobile">
+        <div class="nav-mobile-contain">
+            <div class="nav-mobile">
+                <div class="logo-mobile">
+                    <img src="img/mobile-ver-logo.svg" alt="logo-mobile">
                 </div>
-                <button class="home_bnt">
+                <button class="home-bnt">
                     <a href="/index.html">
-                        <img src="img/Icon home.svg" alt="home"><br>
+                        <img src="img/Icon-home.svg" alt="home"><br>
                         <p>Home</p>
                     </a>
                 </button>
-                <button class="cart_bnt">
-                    <a href="/Shopping Cart.html">
-                        <img src="img/Icon shopping_cart.svg" alt="cart"><br>
+                <button class="cart-bnt">
+                    <a href="/shopping-cart.html">
+                        <img src="img/Icon-shopping-cart.svg" alt="cart"><br>
                         <p>Cart</p>
                     </a>
                 </button>
-                <button class="wish_list_bnt">
+                <button class="wish-list-bnt">
                     <a>
-                        <img src="img/Icon wish_list.svg" alt="wish_list"><br>
+                        <img src="img/Icon-wish-list.svg" alt="wish-list"><br>
                         <p>Wish List</p>
                     </a>
                 </button>
-                <button class="login_bnt">
+                <button class="login-bnt">
                     <a href="/login.html">
-                        <img src="img/Icon login.svg" alt="login"><br>
+                        <img src="img/Icon-login.svg" alt="login"><br>
                         <p>Login</p>
                     </a>
                 </button>
@@ -84,51 +84,51 @@
         </div>
 
         <!-- logo + search_bar + humburger_menu -->
-        <div class="logo_bar">
-            <div class="logo_desktop">
-                <img src="img/desktop_ver_logo.svg" alt="logo_desktop">
+        <div class="logo-bar">
+            <div class="logo-desktop">
+                <img src="img/desktop-ver-logo.svg" alt="logo-desktop">
             </div>
-            <div class="search_bar_box">
-                <form action="" class="search_bar">
+            <div class="search-bar-box">
+                <form class="search-bar">
                     <input type="text" class="search" placeholder="Search products...">
-                    <button class="search_btn">
-                        <img src="img/Icon search.svg">
+                    <button class="search-btn">
+                        <img src="img/Icon-search.svg">
                     </button>
                 </form>
             </div>
-            <div id="ham_menu">
+            <div id="ham-menu">
                 <!-- hamburger button -->
-                <button id="ham_icon" onclick=openNavbar()>
+                <button id="ham-icon" onclick=openNavbar()>
                     <span></span>
                     <span></span>
                     <span></span>  
                 </button>
             </div>
 
-            <div id="ham_menu_detail">
-                <button id="close_icon" onclick=closeNavbar()>
+            <div id="ham-menu-detail">
+                <button id="close-icon" onclick=closeNavbar()>
                     <span></span>
                     <span></span> 
                 </button>
 
                 <!-- hamburger menu list -->
-                <ul id="ham_menu_list">
-                    <div class="nav_block">
-                        <div class="nav_title">
+                <ul id="ham-menu-list">
+                    <div class="nav-block">
+                        <div class="nav-title">
                             <a href="/index.html">
                                 <li>Home</li>
                             </a>
                         </div>
                     </div>
-                    <div class="nav_block">
-                        <div class="nav_title">
+                    <div class="nav-block">
+                        <div class="nav-title">
                             <a onclick=spreadCategoryList()>
                                 <li>Categories</li>
-                                <img class="chevron_right" src="img/Icon chevron_right.svg">
+                                <img class="chevron-right" src="img/Icon-chevron-right.svg">
                             </a>
                         </div>
-                        <ul id="category_list">
-                            <li><a href="/product_list.html">Board Games</a></li>
+                        <ul id="category-list">
+                            <li><a href="/product-list.html">Board Games</a></li>
                             <li><a>Card Games</a></li>
                             <li><a>Dice Games</a></li>
                             <li><a>Quiz Games</a></li>
@@ -136,47 +136,47 @@
                             <li><a>All-time Classics</a></li>
                         </ul>
                     </div>
-                    <div class="nav_block">
-                        <div class="nav_title">
+                    <div class="nav-block">
+                        <div class="nav-title">
                             <a>
                                 <li>Accessories</li>
                             </a>
                         </div>
                     </div>
-                    <div class="nav_block">
-                        <div class="nav_title">
+                    <div class="nav-block">
+                        <div class="nav-title">
                             <a>
                                 <li>Sale</li>
                             </a>
                         </div>
                     </div>
-                    <div class="nav_block">
-                        <div class="nav_title">
+                    <div class="nav-block">
+                        <div class="nav-title">
                             <a>
                                 <li>News</li>
                             </a>
                         </div>
                     </div>
-                    <div class="nav_block">
-                        <div class="nav_title">
+                    <div class="nav-block">
+                        <div class="nav-title">
                             <a>
                                 <li>Find Us</li>
                             </a>
                         </div>
                     </div>
-                    <div class="nav_block">
-                        <div class="nav_title">
+                    <div class="nav-block">
+                        <div class="nav-title">
                             <a>
                                 <li>About Us</li>
-                                <img src="img/Icon chevron_right.svg">
+                                <img src="img/Icon-chevron-right.svg">
                             </a>
                         </div>
                     </div>
-                    <div class="nav_block">
-                        <div class="nav_title">
+                    <div class="nav-block">
+                        <div class="nav-title">
                             <a>
                                 <li>Customer Service</li>
-                                <img src="img/Icon chevron_right.svg">
+                                <img src="img/Icon-chevron-right.svg">
                             </a>
                         </div>
                     </div>

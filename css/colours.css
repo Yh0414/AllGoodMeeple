@@ -244,6 +244,7 @@ h2 {
 .price-range > input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     background:var(--colour-main);
+    transition:.2s;
 }
 
 /* filter Category */
@@ -537,6 +538,7 @@ h2 {
 #coupon-enter-contain input[type="button"] {
     background-color: var(--colour-text);
     color: white;
+    border: none;
 }
 
 #coupon-enter-contain input[type="button"]:hover {

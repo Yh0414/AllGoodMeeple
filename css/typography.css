@@ -189,6 +189,10 @@ h2 {
     font-weight: bold;
 }
 
+.num-cart-wish {
+    text-align: center;
+}
+
 .num-cart-wish > div {
     line-height: 40px;
 }

@@ -45,10 +45,22 @@ h2 {
     font-weight: bold;
 }
 
+.best-sale-contain {
+    line-height: 25px;
+}
+
 .best-sale-contain,
 .sale-contain > span,
 .out-of-stock  {
     font-size: 12px;
+}
+
+.sale-contain {
+    line-height: 15px;
+}
+
+.out-of-stock {
+    line-height: 20px;
 }
 
 .product-name {
@@ -78,7 +90,7 @@ h2 {
     font-weight: bold;
 }
 
-/* about Our store - mobile ver */
+/* about our store - mobile ver */
 .about-store p {
     text-align: left;
     font-size: 14px;
@@ -306,7 +318,7 @@ h2 {
 
 
 /* checkout shipping page mobile ver */
-/*  process shown bar */
+/* process shown bar */
 .process-shown-contain {
     font-family: var(--font-secondary);
 }
@@ -374,7 +386,7 @@ h2 {
     font-weight: bold;
 }
 
-/* billing details + shipping detail */
+/* billing details + shipping details */
 .billing-detail,
 .shipping-detail {
     text-align: left;
@@ -413,7 +425,7 @@ h2 {
 }
 
 
-/*  checkout payment mobile ver  */
+/* checkout payment mobile ver */
 .order-list > h2,
 .payment-method-contain > h2 {
     text-align: left;
@@ -479,7 +491,7 @@ h2 {
     }
 
 
-    /* product_list page - desktop ver*/
+    /* product list page - desktop ver*/
     /* page title - desktop ver */
     .page-nav {
         font-size: 25px;
@@ -489,7 +501,7 @@ h2 {
         font-size: 60px;
     }
 
-    /* Product detail */
+    /* product detail page - desktop ver*/
     .product-info-contain {
         font-size: 30px;
     }

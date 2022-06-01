@@ -1,0 +1,719 @@
+:root {
+    --colour-bg-desktop: white;
+    --colour-nav-mobile: #BB9C8E;
+    --colour-bg-header:#383428;
+    --colour-bg-footer:#383428;
+    --colour-text: #C6C6C6;
+    --colour-main:#F9943B;
+    --colour-main-hover:#CE4A0E;
+}
+
+body {
+    background-color: var(--colour-bg-desktop);
+    color: var(--colour-text);
+}
+
+a {
+    color: var(--colour-text);
+}
+
+a:active,
+a:hover {
+    color: none;
+}
+
+button {
+    border: none;
+    box-shadow: 0px 3px 1px var(--colour-nav-mobile);
+}
+
+
+/* index page - mobile ver */
+/* banner - mobile ver */
+#banner #carousel-wrap #carousel-images {
+    border: 0;
+	outline: none;
+}
+
+.arrow-contain > .arrow {
+    opacity: 0.5;
+    background-color: #80D49F;
+	color: lightgray;
+    transition-property: opacity;
+	transition-duration: 0.5s;
+}
+
+#banner #carousel-wrap .arrow:hover {
+	opacity: 1;
+}
+
+#banner #carousel-wrap .dot {
+    background-color: var(--colour-text);
+}
+
+#banner #carousel-wrap .active {
+    background-color:#80D49F;
+    opacity: 1;
+}
+
+.transition {
+	transition-property: left;
+	transition-duration: 2s;
+}
+
+/* New Arrivals - mobile ver*/
+h2 {
+    color: var(--colour-bg-footer);
+}
+
+.one-product {
+    background-color: #DBDBDB;
+}
+
+.game-type {
+    color: #80D49F;
+}
+
+.best-sale-contain {
+    background-color: #A30414;
+    color: white;
+}
+
+.sale-contain {
+    background-color: var(--colour-main);
+    color: white;
+}
+
+.out-of-stock {
+    background-color: #B777FF;
+    color: white;
+}
+
+.product-img-contain {
+    background-color: white;
+}
+
+.product-img-contain img:hover {
+    box-shadow: 0 10px 50px 0 var(--colour-main);
+}
+
+.product-name {
+    color: var(--colour-bg-footer);
+}
+
+.true-price {
+    color: var(--colour-main-hover);
+}
+
+.add-to-cart {
+    background-color: var(--colour-main);
+    color: white;
+    opacity: 1;
+}
+
+.add-to-cart:hover {
+    background-color: var(--colour-main-hover);
+}
+
+.disabled {
+    opacity: 0.2;
+}
+
+.disabled:hover {
+    color: none;
+}
+
+.add-to-wish-list {
+    background: none;
+    border: 2px solid var(--colour-main);
+}
+
+.add-to-wish-list:hover {
+    background-color: var(--colour-main-hover);
+    transition: 1s linear;
+}
+
+.arrow-new-arrivals {
+    background: none;
+    color: black;
+    border: 2px solid black;
+}
+
+.arrow-new-arrivals:hover {
+    background-color: var(--colour-main);
+}
+
+/* about our store - mobile ver*/
+.about-store {
+    background-color: var(--colour-main);
+}
+
+.about-store > h2 {
+    color: white;
+}
+
+.about-store p {
+    color: var(--colour-bg-footer);
+}
+
+/* featured games - mobile ver*/
+.feat-bnt {
+    background-color: white;
+    color: var(--colour-text);
+    border: 2px solid var(--colour-bg-footer);
+}
+
+.feat-bnt-active,
+.feat-bnt:hover {
+    background-color: var(--colour-bg-footer);
+    color: white;
+    border: none;
+}
+
+
+/* product_list page - mobile ver*/
+/* page title - mobile ver */
+.page-title-contain {
+    background-color: var(--colour-main);
+}
+
+.page-nav {
+    color: var(--colour-main-hover);
+}
+
+.page-nav a {
+    color: black;
+}
+
+.page-nav a:hover {
+    color: var(--colour-main-hover);
+    border-bottom: 1px solid var(--colour-main-hover);
+}
+
+.page-title {
+    color: white;
+}
+
+/* filter box */
+.filter-contain > li {
+    border-bottom: 2px solid var(--colour-text);
+}
+
+.filter-title {
+    color: black;
+}
+
+/* Available block */
+.hidden-checkbox {
+    opacity: 0;
+}
+
+.switch-area {
+    background-color: var(--colour-text);
+    border: 1px solid var(--colour-text);
+}
+
+.switch-toggle {
+    background-color: white;
+    border: 1px solid var(--colour-text);
+}
+
+.hidden-checkbox:checked ~ .switch-area{
+	background-color: var(--colour-main-hover)
+}
+
+.hidden-checkbox:checked ~ .switch-toggle{
+	border: 1px solid var(--colour-main-hover);
+}
+
+.switch-area,
+.switch-toggle{
+	-webkit-transition: All 0.3s ease; 
+	   -moz-transition: All 0.3s ease; 
+	     -o-transition: All 0.3s ease;
+	        transition: All 0.3s ease; 
+}
+
+/* price range */
+.price-range > input[type="range"] {
+    -webkit-appearance: none;
+    outline: none;
+    background: var(--colour-text);
+}
+
+.price-range > input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background:var(--colour-main);
+}
+
+/* filter Category */
+.board-filter {
+    color: black;
+}
+
+/* layout shown button */
+.layout-change-contain {
+    border: 2px solid black;
+}
+
+.layout-change-contain button {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.layout-change-contain > button:nth-child(1) {
+    border-right: 1px solid black;
+}
+
+/* page num navigation */
+.page-num-contain {
+    border-top: 1px solid var(--colour-text);
+    border-bottom: 1px solid var(--colour-text);
+}
+
+.page-num-contain button {
+    box-shadow: none;
+}
+
+.page-active {
+    background-color: black;
+    color: white;
+}
+
+/* sort bar */
+.sort {
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.sort-btn {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+
+/* product detail page - mobile ver */
+/* product images shown */
+.product-main-img:hover {
+    box-shadow: 0 10px 50px 0 var(--colour-main);
+}
+
+.zoom-in {
+    color:  black;
+}
+
+/* imgs list */
+.img-list:nth-child(1) {
+    border: 2px solid black;
+}
+
+/* product title and price */
+.product-title-price-contain {
+    color: black;
+}
+
+.product-title-price-contain button {
+    box-shadow: none;
+}
+
+.sale-info{
+    background-color: var(--colour-main);
+    color: white;
+}
+
+.stock-info {
+    background-color: #80D49F;
+    color: white;
+}
+
+.save-price {
+    color: #80D49F;
+}
+
+.check-out-bnt {
+    background-color: var(--colour-nav-mobile);
+    color: white;
+}
+
+.check-out-bnt:hover {
+    background-color: var(--colour-bg-footer);
+    transition: all 1s;
+}
+
+.num-cart-wish {
+    border-bottom: 2px solid var(--colour-text);
+}
+
+.num-cart-wish > div {
+    background-color: var(--colour-text);
+}
+
+.num-cart-wish > button {
+    background-color: var(--colour-main);
+    color: white;
+}
+
+.num-cart-wish > button:hover {
+    background-color: #CE4A0E;
+    transition: all 1s;
+}
+
+.product-info-contain {
+    color: #F8D15E;
+}
+
+.product-info-title {
+    color: black;
+}
+
+/* product description */
+.product-description > button {
+    box-shadow: none;
+    color: var(--colour-text);
+    background-color: white;
+    border: 2px solid var(--colour-bg-footer);
+}
+
+.product-description > button:nth-child(1)  {
+    background-color: var(--colour-bg-footer);
+    color: white;
+}
+
+.description-content {
+    background-color: var(--colour-text);
+    color: black;
+}
+
+/* related products */
+.related-product-contain {
+    background-color: var(--colour-nav-mobile);
+}
+
+
+/* shopping cart page - mobile ver */
+/* cart table - mobile ver */
+.cart-table-mobile thead th {
+    background-color: var(--colour-main);
+    color: white;
+    border: 1px solid var(--colour-bg-footer);
+}
+
+.cart-table-mobile tbody tr {
+    background-color: var(--colour-text);
+    color: black;
+    border: none;
+    border-bottom: 2px solid var(--colour-bg-footer);
+}
+
+.cart-table-mobile tbody tr:hover {
+    background-color: #80D49F;
+    transition: all 1s;
+}
+
+/* coupon bar */
+.coupon-contain {
+    border-bottom: 2px solid var(--colour-text);
+}
+
+.coupon-contain input[type="text"] {
+    border: 2px solid var(--colour-bg-footer);
+}
+
+.coupon-contain input[type="button"] {
+    background-color: var(--colour-text);
+    color: white;
+    border: none;
+}
+
+.coupon-contain input[type="button"]:hover {
+    background-color: var(--colour-bg-footer);
+    transition: all 1s;
+}
+
+/* cart totals table - mobile ver */
+.cart-total-table td {
+    border: 1px solid var(--colour-nav-mobile);
+}
+
+.cart-total-table tr td:nth-child(odd) {
+    background-color: var(--colour-main);
+    color: white;
+}
+
+.cart-total-table tr td:nth-child(even) {
+    color: black;
+}
+
+.change-address {
+    color: var(--colour-main);
+}
+
+.proceed-checkout {
+    box-shadow: none;
+    background-color: var(--colour-main);
+    color: white;
+}
+
+.proceed-checkout:hover {
+    background-color: var(--colour-main-hover);
+    transition: all 1s;
+}
+
+
+/* login page mobile ver */
+.login-form {
+    background-color: var(--colour-text);
+    border: 2px solid var(--colour-bg-footer);
+}
+
+.login-form div label {
+    color: var(--colour-main);
+}
+
+.login-form > input,
+.login-form button {
+    background-color: var(--colour-main);
+    color: white;
+    border: none;
+    box-shadow: 0px 3px 1px var(--colour-nav-mobile);
+}
+
+.login-form > input:hover,
+.login-form button:hover {
+    background-color: var(--colour-main-hover);
+}
+
+.login-form a {
+    color: black;
+}
+
+
+/* checkout shipping page mobile ver */
+/* process shown bar */
+.process-shown-contain {
+    color: black;
+}
+
+.circle {
+    background-color: var(--colour-text);
+}
+
+.step-now {
+    background-color: var(--colour-main);
+    color: white;
+}
+
+.line-between {
+    background-color: var(--colour-text);
+}
+
+/* coupon part */
+.expand-coupon-bnt-contain {
+    background-color: var(--colour-text);
+    color: black;
+    border-top: 2px solid var(--colour-bg-header);
+}
+
+.expand-coupon-bnt-contain a {
+    color: var(--colour-main-hover);
+}
+
+.expand-coupon-bnt-contain a:hover {
+    border-bottom: 2px solid var(--colour-main-hover);
+}
+
+#coupon-enter-contain {
+    color: black;
+    border: 3px solid var(--colour-nav-mobile);
+    box-shadow: 0px 3px 1px var(--colour-nav-mobile);
+}
+
+#coupon-enter-contain input[type="text"] {
+    border: 2px solid var(--colour-bg-header);
+}
+
+#coupon-enter-contain input[type="button"] {
+    background-color: var(--colour-text);
+    color: white;
+}
+
+#coupon-enter-contain input[type="button"]:hover {
+    background-color: var(--colour-bg-footer);
+    transition: all 1s;
+}
+
+/* order summary */
+.expand-order-sum-contain {
+    background-color: var(--colour-text);
+    color: var(--colour-main-hover);
+    border-top: 2px solid var(--colour-bg-header);
+}
+
+#order-sum-table,
+.order-list-table {
+    color: black;
+}
+
+#order-sum-table td,
+.order-list-table td {
+    background-color: #EEEEEE;
+    border-top: 2px solid var(--colour-nav-mobile);
+}
+
+#order-sum-table tr:last-child td, 
+.order-list-table tr:last-child td {
+    box-shadow: 0px 3px 1px var(--colour-nav-mobile);
+}
+
+/* billing details + shipping details*/
+.billing-detail,
+.shipping-detail {
+    background-color: #BB9C8E;
+    color: black;
+    border: 5px solid var(--colour-nav-mobile);
+    box-shadow: 0px 3px 1px var(--colour-main);
+}
+
+.billing-detail span {
+    color: var(--colour-main-hover);
+}
+
+.billing-detail input,
+.shipping-detail input {
+    border: 2px solid var(--colour-text);
+}
+
+.billing-detail input:hover,
+.shipping-detail input:hover {
+    border-color: var(--colour-bg-header);
+}
+
+/* ship buttons */
+.return-to-cart a {
+    color: var(--colour-main-hover);
+}
+
+.return-to-cart a:hover {
+    border-bottom: 2px solid var(--colour-main-hover);
+}
+
+.ship-bnts button {
+    background-color: var(--colour-main);
+    color: white;
+    box-shadow: none;
+}
+
+.ship-bnts button:hover {
+    background-color: var(--colour-main-hover);
+    transition: all 1s;
+}
+
+.privacy-policy {
+    color: black;
+}
+
+.privacy-policy > span {
+    color: var(--colour-main);
+}
+
+
+/* checkout payment mobile ver */
+.payment-step-active .circle {
+    background-color: var(--colour-main);
+    color: white;
+}
+
+.line-active1 {
+    background-color: var(--colour-main);
+}
+
+/* payment method part */
+.payment-method-contain > div {
+    background-color: #EEEEEE;
+    color: black;
+}
+
+.payment-checkbox {
+    background-color: white;
+    border: 2px solid var(--colour-main);
+}
+
+.option1 > input[type="checkbox"]:checked + .payment-checkbox::after,
+.option2 > input[type="checkbox"]:checked + .payment-checkbox::after {
+    background: var(--colour-main);
+    border: white solid 2px;
+}
+
+.method-bnt {
+    background-color: white;
+    color: var(--colour-text);
+    border: 2px solid var(--colour-bg-footer);
+}
+
+.method-bnt-active,
+.method-bnt:hover {
+    border: none;
+    background-color: var(--colour-bg-footer);
+    color: white;
+}
+
+.payment-form input {
+    border: 2px solid var(--colour-text);
+}
+
+
+/* checkout confirmation mobile ver */
+.confirmation-contain > div {
+    color: black;
+    border: 2px solid var(--colour-nav-mobile);
+}
+
+.confirmation-contain > div > div:first-child {
+    background-color: var(--colour-text);
+}
+
+.ship-bnts-step3 a button {
+    background-color: var(--colour-text);
+}
+
+
+/* desktop version */
+@media screen and (min-width:1750px ) {
+    /* product detail page - desktop ver*/
+    .zoom-in-desktop {
+        color: black;
+    }
+
+    .product-title-price-contain {
+        border-left: 2px solid var(--colour-text);
+    }
+
+
+    /* shopping cart page - desktop ver */
+    /* cart table - desktop ver */
+    .cart-table-desktop thead {
+        background-color: var(--colour-main);
+        color: white;
+    }
+
+    .cart-table-desktop th {
+        border: 1px solid var(--colour-bg-footer);
+    }
+
+    .cart-table-desktop tbody {
+        background-color: var(--colour-text);
+        color: black;
+    }
+
+    .cart-table-desktop tbody tr:hover {
+        background-color: #80D49F;
+        transition: all 1s;
+    }
+}
+
+
+
+
+

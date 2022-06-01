@@ -2,10 +2,7 @@ body {
     cursor: default;
 }
 
-a {
-    cursor: pointer;
-}
-
+a,
 button {
     cursor: pointer;
 }
@@ -15,59 +12,34 @@ button {
 }
 
 
-
-
-
 /* index page - mobile ver */
 /* banner - mobile ver */
 #banner #carousel-wrap {
 	overflow: hidden;
 }
 
-
-
-
-
-
-
 .arrow-contain > .arrow {
 	transform: translateY(-50%);
 	cursor: pointer;
 }
 
-
-
-
 #banner #carousel-wrap #dots {
-
 	transform: translateX(-50%)
 }
 
-#banner #carousel-wrap .dot {
-
-	
+#banner #carousel-wrap .dot {	
 	border-radius: 50%;
-
 	cursor: pointer;
 }
 
 #banner #carousel-wrap .active {
-
     border-radius: 6px;
 }
 
-
 /* New Arrivals - mobile ver*/
-
-
 .one-product {
     border-radius: 10px;
 }
-
-
-
-
-
 
 .best-sale-contain {
     border-radius: 0 10px 0 10px;
@@ -77,7 +49,6 @@ button {
     border-radius: 10px;
 }
 
-
 .out-of-stock {
     border-radius: 10px;
 }
@@ -86,95 +57,58 @@ button {
     border-radius: 50%;
 }
 
-
 .product-img-contain img:hover {
     transform: scale(1.5);
     border-radius: 50%;
-
 }
-
-
-
-
-
-
-
-
 
 .disabled {
     cursor: not-allowed;
 }
 
-
-
 .add-to-wish-list {
     border-radius: 6px;
 }
-
-
-
-
-
-
 
 .arrow-new-arrivals {
     border-radius: 10px;
 }
 
-
 #new2, #new3, #new4 {
     display: none;
 }
 
-
-
 /* featured games - mobile ver*/
-
 .feat-bnt {
     border-radius: 10px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* product_list page - mobile ver*/
 /* filter box */
-
-
 .filter-contain > li {
     list-style: none;
 }
 
-
-
 /* Available block */
-
-
 .hidden-checkbox {
 	z-index: 10;
 	cursor: pointer;
 }
+
 .switch-area {
 	border-radius: 25px;
 }
+
 .switch-toggle {
 	border-radius: 50%;
 }
 
-
 /* price range block */
-
 .price-range > input[type="range"] {
     border-radius: 6px;
 }
+
 .price-range > input[type="range"]::-webkit-slider-thumb {
     border-radius:50%;
 }
@@ -184,18 +118,10 @@ button {
     list-style: none;
 }
 
-
-
-
-
 /* layout shown button */
 .layout-change-contain {
     border-radius: 10px;
 }
-
-
-
-
 
 /* sort bar */
 .sort {
@@ -203,46 +129,32 @@ button {
 }
 
 
-
 /* product detail page - mobile ver */
 /* product images shown */
 .product-main-img:hover {
     transform: scale(1.25);
     border-radius: 50%;
-
 }
 
-
 /* product title and price */
-
 .sale-info,
 .stock-info {
     border-radius: 10px;
 }
 
-
-
-
 .check-out-bnt {
-
-
     border-radius: 10px;
-
 }
-
 
 .num-cart-wish > div {
     border-radius: 10px;
 }
+
 .num-cart-wish > button {
     border-radius: 10px;
 }
 
-
-
-
 /* product description */
-
 .product-description > button {
     border-radius: 10px;
 }
@@ -252,64 +164,51 @@ button {
 }
 
 
-
 /* shopping cart page - mobile ver */
 /* cart table - mobile ver */
 .product-cart-img {
     border-radius: 50%;
 }
 
-
-
 /* coupon bar */
-
 .coupon-contain input[type="text"] {
     border-radius: 10px;
 }
+
 .coupon-contain input[type="button"] {
     border-radius: 10px;
     cursor: pointer;
 }
-
-
-
 
 /* login page mobile ver */
 .login-form {
     border-radius: 10px;
 }
 
-
 .login-form div input {
     border-radius: 5px;
 }
+
 .login-form > input,
 .login-form button {
     border-radius: 5px;
-
 }
-
 
 
 /* checkout shipping page mobile ver */
 /* process shown bar */
 .process-shown-contain {
     list-style: none;
-
 }
 
 .circle {
     border-radius: 50%;
 }
 
-
-
 /* coupon part */
 .expand-coupon-bnt-contain {
     border-radius: 10px;
-
 }
-
 
 #coupon-enter-contain {
     border-radius: 10px;
@@ -317,15 +216,14 @@ button {
 
 #coupon-enter-contain input[type="text"] {
     border-radius: 10px;
-
 }
+
 #coupon-enter-contain input[type="button"] {
     border-radius: 10px;
     cursor: pointer;
 }
 
 /* order summary */
-
 .expand-order-sum-contain {
     border-radius: 10px 10px 0 0;
     cursor: pointer;
@@ -335,12 +233,9 @@ button {
     transform: rotate(180deg);
 }
 
-
-
 .order-sum-img {
     border-radius: 50%;
 }
-
 
 /* billing detail + shipping detail */
 .billing-detail,
@@ -348,16 +243,12 @@ button {
     border-radius: 10px;
 }
 
-
 .billing-detail input,
 .shipping-detail input {
     border-radius: 6px;
 }
 
-
 /* ship buttons */
-
-
 .ship-bnts button {
     border-radius: 10px;
 }
@@ -367,13 +258,16 @@ button {
 .order-list-table tr:first-child td:first-child {
     border-radius: 10px 0 0 0;
 }
+
 .order-list-table tr:first-child td:last-child {
     border-radius: 0 10px 0 0;
 }
+
 /* payment method part */
 .payment-method-contain > div {
     border-radius: 10px;
 }
+
 .payment-checkbox {
     border-radius: 50%;
 }
@@ -393,8 +287,8 @@ button {
     border-radius: 10px;
 }
 
-/* checkout confirmation mobile ver */
 
+/* checkout confirmation mobile ver */
 .confirmation-contain > div {
     border-radius: 10px;
 }
@@ -405,23 +299,8 @@ button {
 
 
 
-
-
-
 /* desktop version */
 @media screen and (min-width:1750px ) {
-
-
-
-
-
-
-   
-
-
-
-
-
     /* shopping cart page - desktop ver */
     /* cart table - desktop ver */
     .product-cart-img {
@@ -430,17 +309,5 @@ button {
 
     .num-bar {
         transform: scale(2.5);
-    }
-
-
-
-    
-
-
-
-
-
-    
+    }  
 }
-
-

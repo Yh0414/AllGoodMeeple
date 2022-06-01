@@ -1,0 +1,605 @@
+:root {
+    --font-primary: "Segoe UI", sans-serif;
+    --font-secondary: Arial, serif;
+    --text-base-size: 20px;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: var(--text-base-size);
+    font-weight: normal;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* index page - mobile ver */
+/* banner - mobile ver */
+#banner #carousel-wrap #carousel-images {
+    font-size: 0;
+}
+
+.arrow-contain > .arrow {
+    font-size: 30px;
+    font-weight: 30px;
+    text-align: center;
+}
+
+/* New Arrivals - mobile ver */
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: var(--font-primary);
+}
+
+.one-product {
+    font-family: var(--font-secondary);
+}
+
+/* each product */
+.game-type {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.best-sale-contain,
+.sale-contain > span,
+.out-of-stock  {
+    font-size: 12px;
+}
+
+.product-name {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 15px;
+}
+
+.true-price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pre-price {
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: line-through 2px var(--colour-bg-footer);
+}
+
+.add-to-cart {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.arrow-new-arrivals {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* about Our store - mobile ver */
+.about-store p {
+    text-align: left;
+    font-size: 14px;
+}
+
+/* featured games - mobile ver */
+.feat-bnt {
+    font-weight: bold;
+}
+
+
+/* product-list page - mobile ver */
+/* page title - mobile ver */
+.page-title-contain {
+    font-family: var(--font-primary);
+    text-align: left;
+}
+
+.page-nav {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.page-nav a {
+    font-weight: normal;
+}
+
+.page-title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* filter box */
+.filter-contain {
+    text-align: left;
+}
+
+.filter-title {
+    font-family: var(--font-secondary);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* filter Category */
+.each-cate-filter {
+    text-align: left;
+}
+
+/* sort bar */
+.sort {
+    text-indent: 10px;
+}
+
+
+/* product detail page - mobile ver */
+/* product images shown */
+.zoom-in {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--font-secondary);
+}
+
+/* product title and price */
+.product-title-price-contain {
+    font-family: var(--font-secondary);
+    text-align: left;
+}
+
+.sale-info,
+.stock-info {
+    font-size: 15px;
+}
+
+.product-title  {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.detail-price-contain {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.detail-price-contain > .true-price {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.check-out-bnt-contain {
+    text-align: center;
+}
+
+.check-out-bnt {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.num-cart-wish > div {
+    line-height: 40px;
+}
+
+.num-cart-wish > button {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product-info-contain {
+    font-size: 20px;
+}
+
+.product-info-title {
+    font-weight: bold;
+}
+
+/* product description */
+.product-description {
+    text-align: left;
+}
+
+.product-description > button {
+    font-family: var(--font-primary);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.description-content {
+    font-size: 15px;
+}
+
+
+/* shopping cart page - mobile ver */
+/* cart table - mobile ver */
+.cart-table-mobile thead th {
+    font-family: var(--font-primary);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.cart-table-mobile tbody tr {
+    font-size: 12px;
+    text-align: center;
+}
+
+.cart-table-mobile tbody td:nth-child(2) {
+    text-align: left;
+}
+
+.cart-table-mobile .pre-price {
+    font-weight: normal;
+}
+
+.cart-table-mobile .each-price {
+    font-size: 14px;
+}
+
+.cart-table-mobile .true-price{
+    font-size: 15px;
+}
+
+/* coupon bar */
+.coupon-contain {
+    font-family: var(--font-secondary);
+}
+
+.coupon-contain input[type="text"] {
+    text-indent: 10px;
+    font-size: 15px;
+}
+
+.coupon-contain input[type="button"] {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* cart totals table - mobile ver */
+.cart-total-title {
+    text-align: left;
+    font-family: var(--font-secondary);
+}
+
+.cart-total-table {
+    text-align: left;
+}
+
+.cart-total-table tr td:nth-child(odd) {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.cart-total-table tr td:nth-child(even) {
+    font-size: 15px;
+}
+
+.total-price,
+.city {
+    font-weight: bold;
+}
+
+/* proceed checkout button */
+.proceed-checkout {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* login page mobile ver */
+.login-form {
+    text-align: left;
+    font-family: var(--font-secondary);
+    font-size: 20px;
+}
+
+.login-form div label {
+    font-weight: bold;
+}
+
+.login-form > input,
+.login-form button {
+    font-size: 15px;
+}
+
+.login-form a {
+    font-size: 10px;
+}
+
+
+/* checkout shipping page mobile ver */
+/*  process shown bar */
+.process-shown-contain {
+    font-family: var(--font-secondary);
+}
+
+.circle {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.process-shown-contain p {
+    font-size: 15px;
+}
+
+/* coupon part */
+.expand-coupon-bnt-contain,
+#coupon-enter-contain {
+    font-family: var(--font-secondary);
+    font-size: 15px;
+    text-align: left;
+    line-height: 20px;
+}
+
+#coupon-enter-contain input[type="text"] {
+    text-indent: 10px;
+}
+
+#coupon-enter-contain input[type="button"] {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* order summary */
+.expand-order-sum-contain {
+    font-family: var(--font-secondary);
+    font-size: 15px;
+    text-align: left;
+}
+
+#order-sum-table,
+.order-list-table {
+    font-family: var(--font-secondary);
+    font-size: 12px;
+    text-align: left;
+}
+
+#order-sum-table td,
+.order-list-table td {
+    line-height: 20px;
+}
+
+#order-sum-table td:nth-child(even),
+.order-list-table td:nth-child(even) {
+    text-align: right;
+}
+
+#order-sum-table .total-title,
+.order-list-table .total-title {
+    font-size: 15px;
+    font-weight: bold;
+}
+#order-sum-table .total-price ,
+.order-list-table .total-price{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* billing details + shipping detail */
+.billing-detail,
+.shipping-detail {
+    text-align: left;
+}
+
+.billing-detail h2,
+.shipping-detail h2 {
+    font-size: 25px;
+}
+
+.billing-detail form,
+.shipping-detail form {
+    font-family: var(--font-secondary);
+    font-size: 15px;
+}
+
+.billing-detail input,
+.shipping-detail input {
+    text-indent: 10px;
+}
+
+/* ship buttons */
+.return-to-cart {
+    font-size: 20px;
+}
+
+.ship-bnts button {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.privacy-policy {
+    font-size: 20px;
+    text-align: left;
+}
+
+
+/*  checkout payment mobile ver  */
+.order-list > h2,
+.payment-method-contain > h2 {
+    text-align: left;
+}
+
+/* payment method part */
+.payment-method-contain > div {
+    font-size: 15px;
+    text-align: left;
+}
+
+.payment-checkbox {
+    text-align: center;
+    line-height: 20px;
+}
+
+.method-bnt {
+    font-weight: bold;
+}
+
+.payment-form {
+    font-family: var(--font-secondary);
+    font-size: 15px;
+}
+
+.payment-form input {
+    text-indent: 10px;
+}
+
+
+/* checkout confirmation mobile ver */
+.confirmation-contain > h2 {
+    text-align: left;
+}
+
+.confirmation-contain > div {
+    text-align: center;
+    font-size: 20px;
+}
+
+.confirmation-contain > div > div:nth-child(2) {
+    font-weight: bold;
+}
+
+.ship-bnts-step3,
+.ship-bnts-step3 button  {
+    font-size: 20px;
+}
+
+
+/* desktop version */
+@media screen and (min-width:1750px ) {
+    /* index page - desktop ver */
+    /* New arrivals  - desktop ver*/
+    h2 {
+        font-size: 60px;
+    }
+
+    /* about our store  - desktop ver*/
+    .about-store p {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+
+    /* product_list page - desktop ver*/
+    /* page title - desktop ver */
+    .page-nav {
+        font-size: 25px;
+    }
+
+    .page-title {
+        font-size: 60px;
+    }
+
+    /* Product detail */
+    .product-info-contain {
+        font-size: 30px;
+    }
+
+    .description-content {
+        font-size: 26px;
+    }
+
+
+    /* shopping cart page - desktop ver */
+    /* cart table - desktop ver */
+    .cart-table-desktop {
+        font-family: var(--font-secondary);
+    }
+
+    .cart-table-desktop thead {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .cart-table-desktop td {
+        font-size: 35px;
+    }
+
+    .cart-table-desktop .pre-price{
+        font-size: 25px;
+        font-weight: normal;
+    }
+
+    .cart-table-desktop .true-price {
+        font-size: 40px;
+    }
+
+    /* cart total table - desktop ver */
+    .cart-total-table tr td:nth-child(odd),
+    .cart-total-table tr td:nth-child(even)  {
+        font-size: 50px;
+    }
+
+    .proceed-checkout {
+        font-size: 30px;
+    }
+
+
+    /* login page - desktop ver */
+    .login-form,
+    .login-form > input,
+    .login-form button {
+        font-size: 30px;
+    }
+
+    .login-form a {
+        font-size: 20px;
+    }
+
+
+    /* checkout shipping page - desktop ver */
+    /* coupon + order summary - desktop ver */
+    .expand-order-sum-contain,
+    .expand-coupon-bnt-contain,
+    #coupon-enter-contain {
+        font-size: 30px;
+    }
+
+    #order-sum-table,
+    .order-list-table {
+        font-size: 20px;
+    }
+
+    #order-sum-table td,
+    .order-list-table td {
+        line-height: 50px;
+    }
+
+    #order-sum-table .total-title,
+    .order-list-table .total-title {
+        font-size: 25px;
+    }
+    #order-sum-table .total-price,
+    .order-list-table .total-price {
+        font-size: 30px;
+    }
+
+    /* billing detail + shipping detail */
+    .billing-detail,
+    .shipping-detail {
+        font-size: 30px;
+    }
+
+    /* ship buttons */
+    .return-to-cart {
+        text-align: left;
+        font-size: 30px;
+    }
+
+    .place-order {
+        text-align: right;
+        font-size: 30px;
+    }
+
+
+    /* checkout payment page - desktop ver */
+    /* payment method */
+    .payment-method-contain > div {
+        font-size: 30px;
+    }
+
+
+    /* checkout confirmation page - desktop ver */
+    .confirmation-contain > div {
+        font-size: 30px;
+    }
+}

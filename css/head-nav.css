@@ -1,0 +1,385 @@
+:root {
+    --colour-bg-desktop: white;
+    --colour-nav-mobile: #BB9C8E;
+    --colour-bg-header:#383428;
+    --colour-bg-footer:#383428;
+    --colour-text: #C6C6C6;
+    --colour-main:#F9943B;
+    --font-primary: "Segoe UI", sans-serif;
+    --font-secondary: Arial, serif;
+    --text-base-size: 20px;
+}
+   
+body {
+    font-family: var(--font-primary);
+    font-size: var(--text-base-size);
+    font-weight: normal;
+    text-align: center;
+    color: var(--colour-text);
+    background-color: var(--colour-bg-desktop);
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+a {
+    text-decoration: none;
+    color: var(--colour-text);
+    cursor: pointer;
+}
+
+a:active,
+a:hover {
+    color: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 3px 1px var(--colour-nav-mobile);
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* nav-bar - mobile ver */
+/* head nav with 4 main buttons*/
+.nav-mobile-contain {
+    background-color: var(--colour-bg-header);
+}
+
+.nav-mobile {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.logo-mobile {
+    background-color: white;
+    width: 80px;
+    height: 60px;
+    border-radius: 10px;
+    margin: 20px 5px 0;
+}
+
+.logo-mobile img {
+    width: 80px;
+    height: 50px;
+    margin: 10px auto;
+}
+
+.home-bnt,
+.cart-bnt,
+.wish-list-bnt,
+.login-bnt {
+    background-color: white;
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 20px 5px 0;
+}
+
+.home-bnt:hover,
+.cart-bnt:hover,
+.wish-list-bnt:hover,
+.login-bnt:hover {
+    background-color: var(--colour-main);
+}
+
+.home-bnt img,
+.cart-bnt img,
+.wish-list-bnt img,
+.login-bnt img {
+    margin: 10px auto;
+}
+
+.home-bnt p,
+.cart-bnt p,
+.wish-list-bnt p,
+.login-bnt p {
+    font-size: 12px;
+    font-family: var(--font-secondary);
+    color: var(--colour-text);
+    margin: auto;
+}
+
+.nav-desktop,
+.logo-desktop {
+    display: none;
+}
+
+#head-category-list {
+    display: none;
+}
+
+
+/* search bar - mobile ver*/
+.search-bar-box {
+    width: 240px;
+    margin: 20px 0;
+}
+
+.search {
+    width: 240px;
+    height: 40px;
+    outline: none;
+    border-radius: 18px;
+    border: 1px solid #ccc;
+    text-indent: 10px;
+    float: left;
+}
+
+.search-btn {
+    border: none;
+    box-shadow: none;
+    height: 35px;
+    width: 35px;
+    background: none;
+    float: right;
+    margin-top: -37px;
+}
+
+
+/* hamburger menu */
+.logo-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;  
+}
+
+#ham-icon {
+    height: 42px;
+    width: 42px;
+    margin: 20px 25px;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    background: none;
+}
+
+#ham-icon span {
+    display: block;
+    width: 42px;
+    height: 4px;
+    background-color: var(--colour-main);
+    margin: 5px auto;
+    border-radius: 5px;
+}
+
+#ham-menu-detail {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    background: var(--colour-bg-header);
+    text-align: left;
+    z-index: 5;
+}
+
+@media screen and (max-width:700px ){
+    #ham-menu-detail {
+        width: 70vw;
+    }
+}
+
+#ham-menu-detail a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.nav-title,
+#category-list a {
+    margin: 15px auto;
+    margin-right: 20px;
+    border-bottom: 2px solid var(--colour-text);
+    cursor: pointer;
+}
+
+#ham-menu-detail a:hover,
+#ham-menu-detail a:active {
+    color: var(--colour-main)
+}
+
+#close-icon {
+    height: 42px;
+    width: 42px;
+    margin-top: 20px;
+    border: none;
+    box-shadow: none;
+    background: none;
+    margin-left: 15px;
+}
+
+#close-icon span {
+    display: block;
+    width: 42px;
+    height: 4px;
+    background-color: var(--colour-main);
+    margin: 5px auto;
+    border-radius: 5px;
+    transform-origin: 15px 0px;
+}
+
+#close-icon span:first-child {
+    transform: rotate(45deg);
+} 
+
+#close-icon span:last-child {
+    transform: rotate(-45deg);
+} 
+
+#ham-menu-list {
+    margin-bottom: 50px;
+}
+
+#category-list {
+    display: none;
+}
+
+.nav-title li,
+#category-list li {
+    font-family: var(--font-primary);
+    font-weight: bold;
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+#category-list li {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.nav-title a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.nav-title img {
+    height: 15px;
+    margin: auto 10px;
+}
+
+.chevron-right-rotate {
+    transform: rotate(90deg);
+    transition: all .3s linear;
+}
+
+
+/*head nav desktop ver */
+@media screen and (min-width:1750px ) {
+
+    /* top nav bar - desktop ver*/
+    .nav-desktop ul {
+        padding: 0;
+    }
+
+    .nav-mobile,
+    .logo-mobile {
+        display: none;
+    }
+
+    .nav-desktop {
+        display: block;
+    }
+
+    .header-nav a:active,
+    .header-nav a:hover,
+    #head-category-list a:active,
+    #head-category-list a:hover {
+        color: var(--colour-main);
+        border-bottom: 1px solid var(--colour-main);
+        transition: color 0.3s ease;
+    }
+
+    nav {
+        background-color: var(--colour-bg-header);
+        height: 100px;
+    }
+
+    .nav-desktop {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .nav-desktop > * {
+        margin: 0.5rem;
+        list-style-type: none;
+    }
+
+    .header-login a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #F9943B;
+        transition: color 0.3s ease;
+    }
+
+    .header-login a:hover,
+    .header-login a:active {
+        border-bottom: 2px solid var(--colour-main);
+        transition: color 0.3s ease;
+    }
+
+    .header-nav {
+        margin-left: 140px;
+    }
+
+    .social-icons {
+        margin-right: 140px;
+    }
+
+    #head-category-list {
+        width: 180px;
+        list-style: none;
+        background-color: var(--colour-bg-header);
+        position: fixed;
+        text-align: left;
+        margin-left: -10px;
+        margin-top: 3px;
+    }
+
+    #head-category-list li {
+        padding: 10px;
+    }
+
+    .nav-desktop > li:hover #head-category-list {
+        display: block;
+    }
+
+
+    /* logo + search_bar  - desktop ver */
+    .logo-desktop {
+        display: block;
+    }
+
+    .hum-menu {
+        display: none;
+    }
+
+    .search-bar-box {
+        margin: 0;
+    }
+
+    .logo-bar {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 10vw;
+        border-bottom: 1px solid;
+    }
+
+    
+    /* hamburger menu does not shown in desktop ver */
+    #ham-menu,
+    #ham-menu-detail {
+        display: none;
+    }
+}

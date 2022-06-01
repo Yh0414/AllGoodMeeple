@@ -1,10 +1,11 @@
+var a = document.getElementById("ham-menu-detail");
+
 function openNavbar() {
-    var ham_menu_detail = document.getElementById("ham-menu-detail");
-    ham_menu_detail.style.display = "block";
+    a.style.display = "block";
 }
 
 function closeNavbar() {
-    ham_menu_detail.style.display = "none";
+    a.style.display = "none";
 }
 
 function spreadCategoryList(){

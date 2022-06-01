@@ -1,0 +1,196 @@
+:root {
+    --colour-bg-desktop: white;
+    --colour-nav-mobile: #BB9C8E;
+    --colour-bg-header:#383428;
+    --colour-bg-footer:#383428;
+    --colour-text: #C6C6C6;
+    --colour-main:#F9943B;
+    --font-primary: "Segoe UI", sans-serif;
+    --font-secondary: Arial, serif;
+    --text-base-size: 20px;
+} 
+  
+body {
+    font-family: var(--font-primary);
+    font-size: var(--text-base-size);
+    font-weight: normal;
+    text-align: center;
+    color: var(--colour-text);
+    background-color: var(--colour-bg-desktop);
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+a {
+    text-decoration: none;
+    color: var(--colour-text);
+    cursor: pointer;
+}
+
+a:active,
+a:hover {
+    color: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 3px 1px var(--colour-nav-mobile);
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* footer */
+footer {
+    background-color: var(--colour-bg-footer);
+    overflow: hidden;
+}
+
+.footer-logo-mobile,
+.footer-logo-desktop {
+    margin: auto;
+    border-radius: 0;
+    background: none;
+}
+
+.footer-logo-mobile > img,
+.footer-logo-desktop > img {
+    margin-top: 20px;
+}
+
+.footer-logo-desktop > img {
+    margin-bottom: -100px;
+}
+
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+/* Newsletter + Find Us + About Us + Categories + Customer service*/
+.newsletter,
+.sunscribe-bar {
+    width: 295px;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.sunscribe-bar > span,
+.findus > span,
+.aboutus > span,
+.categories > span,
+.customerservice > span {
+    font-family: var(--font-primary);
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--colour-main);
+    margin: 5px 40px;
+}
+
+.subscribe-enter,
+.subscribe-bnt {
+    width: 295px;
+    height: 30px;
+    outline: none;
+    border: 2px solid var(--colour-text);
+    border-radius: 5px;
+    margin: 5px 40px;
+}
+
+.subscribe-bnt {
+    width: 303px;
+    border: 2px solid #CE4A0E;
+    background-color: #CE4A0E;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/* Find Us + About Us + Categories + Customer service*/
+.findus,
+.aboutus,
+.categories,
+.customerservice {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.findus-list > li,
+.aboutus-list > li,
+.categories-list > li,
+.customer-service-list > li {
+    list-style: none;
+    margin: 10px auto;
+    display: flex;
+    color: white;
+    font-family: var(--font-secondary);
+    font-size: 14px;
+}
+
+.aboutus-list a,
+.categories-list a {
+    text-decoration: none;
+    color: white;
+}
+
+.aboutus-list a:hover,
+.categories-list a:hover {
+    color: var(--colour-main);
+    border-bottom: 1px solid var(--colour-main);
+}
+
+.location > img,
+.phone > img,
+.mail > img,
+.open-time > img {
+    width: 21px;
+    margin-right: 15px;
+}
+
+
+/* footer-social_icons */
+.footer-social-icons {
+    text-align: right;
+    border-bottom: 1px solid;
+    margin: auto 40px;
+}
+
+.foot-icon {
+    margin: 30px 12px;
+}
+
+
+/* copyright + payment method*/
+.copyright-contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.copyright {
+    text-align: left;
+    margin: 30px 40px 0 40px;
+}
+
+.copyright > span {
+    color: var(--colour-main);
+}
+
+.payment-method {
+    text-align: left;
+    margin: 20px 20px 20px 20px;
+}
+
+.payment-method > img {
+    width: 80px;
+    height: 50px;
+}

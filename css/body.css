@@ -85,7 +85,13 @@ button {
 
 
 /* product_list page - mobile ver*/
-/* filter box */
+/* filter bar - mobile ver */
+#filter-contain-mobile {
+    z-index: 5;
+    list-style: none;
+}
+
+/* filter box - desktop ver */
 .filter-contain > li {
     list-style: none;
 }
@@ -126,6 +132,11 @@ button {
 /* sort bar */
 .sort {
     border-radius: 18px;
+}
+
+/* filter button - mobile ver */
+.filter_bnt_mobile {
+    border-radius: 10px;
 }
 
 

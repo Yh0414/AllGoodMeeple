@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/typography.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/product-list.js"></script>
     <script>
         $(document).ready(function(){
            
@@ -43,8 +44,90 @@
             </div>
         </div>
 
+        <!-- mobile filter bar -->
+        <ul id="filter-contain-mobile">
+            <button class="close_bnt" onclick=closeFilter()>
+                <img src="img/Icon-close.svg">
+            </button>
+            <li class="filter-search-contain">
+                <p class="filter-title">Search in Board Games</p>
+                <form class="filter-search_bar">
+                    <input type="text" class="search filter-search-text" placeholder="Search products...">
+                    <button class="search-btn">
+                        <img src="img/Icon-search.svg">
+                    </button>
+                </form>
+                <div class="clear"></div>
+            </li>
+            <li class="available-contain">
+                <div class="filter-title">
+                    <p>Available Only <img src="img/Icon-side-arrow-up.svg"></p>
+                </div>
+                <div class="switch-btn">
+                    <input type="checkbox" class="hidden-checkbox">
+                    <span class="switch-area"></span>
+                    <span class="switch-toggle"></span>
+                </div>
+                <span>Show only available</span>
+                <div class="clear"></div>
+            </li>
+            <li class="price-contain">
+                <div class="filter-title">
+                    <p>Price <img src="img/Icon-side-arrow-up.svg"></p>
+                </div>
+                <div class="price-range">
+                    <p>$0.00</p>
+                    <p>$3,000.00</p>
+                    <div class="clear"></div>
+                    <input type="range" id="dur" value="0" min="0" max="3000" step="10">
+                </div>
+            </li>
+            <li class="category-contain">
+                <div class="filter-title">
+                    <p>Category <img src="img/Icon-side-arrow-up.svg"></p>
+                </div>
+                <ul class="check-filter">
+                    <li class="each-cate-filter board-filter">
+                        <input type="checkbox" class="cate-checkbox" checked="checked">
+                        <p>Board Games <img src="img/Icon-arrow-down-orange.svg"></p>
+                        <p>4430</p>
+                    </li>
+                    <li class="each-cate-filter">
+                        <input type="checkbox" class="cate-checkbox">
+                        <p>Card Games <img src="img/Icon-arrow-down-white.svg"></p>
+                        <p>1584</p>
+                    </li>
+                    <li class="each-cate-filter">
+                        <input type="checkbox" class="cate-checkbox">
+                        <p>Dice Games <img src="img/Icon-arrow-down-white.svg"></p>
+                        <p>1665</p>
+                    </li>
+                    <li class="each-cate-filter">
+                        <input type="checkbox" class="cate-checkbox">
+                        <p>Quiz Games <img src="img/Icon-arrow-down-white.svg"></p>
+                        <p>565</p>
+                    </li>
+                    <li class="each-cate-filter">
+                        <input type="checkbox" class="cate-checkbox">
+                        <p>Party Games <img src="img/Icon-arrow-down-white.svg"></p>
+                        <p>5500</p>
+                    </li>
+                    <li class="each-cate-filter">
+                        <input type="checkbox" class="cate-checkbox">
+                        <p>All-time Classics <img src="img/Icon-arrow-down-white.svg"></p>
+                        <p>5500</p>
+                    </li>
+                </ul>
+            </li>
+            <li class="available-contain">
+                <div class="filter-title">
+                    <p>Tags <img src="img/Icon-arrow-down-white.svg"></p>
+                </div>
+            </li>
+        </ul>
+
         <div class="product-list-page-contain">
-            <!-- filter function -->
+            <!-- filter function - desktop -->
             <ul class="filter-contain">
                 <li class="filter-search-contain">
                     <p class="filter-title">Search in Board Games</p>
@@ -131,6 +214,9 @@
                         <button><img src="img/Icon-grid.svg"></button>
                         <button><img src="img/Icon-list.svg"></button>
                     </div>
+                    <button class="filter_bnt_mobile" onclick=showFilter()>
+                        <img src="img/Icon-filter.svg">
+                    </button>
                     <!-- current page number bar -->
                     <div class="page-num-contain">
                         <button class="page-active">1</button>

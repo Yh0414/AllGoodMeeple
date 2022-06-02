@@ -195,7 +195,28 @@ h2 {
 }
 
 /* filter box */
-.filter-contain > li {
+/* filter - mobile ver */
+#filter-contain-mobile {
+    background-color: var(--colour-bg-header);
+    color: white;
+}
+
+.close_bnt {
+    box-shadow: none;
+    background: none;
+}
+
+#filter-contain-mobile .filter-title {
+    color: white;
+}
+
+#filter-contain-mobile .board-filter {
+    color: orange;
+}
+
+/* filter - desktop ver */
+.filter-contain > li,
+#filter-contain-mobile > li{
     border-bottom: 2px solid var(--colour-text);
 }
 
@@ -265,6 +286,17 @@ h2 {
 
 .layout-change-contain > button:nth-child(1) {
     border-right: 1px solid black;
+}
+
+.filter_bnt_mobile {
+    border: 2px solid black;
+    background: none;
+    box-shadow: none;
+}
+
+.filter_bnt_mobile:hover {
+    background-color: var(--colour-main);
+    transition: all 1s;
 }
 
 /* page num navigation */

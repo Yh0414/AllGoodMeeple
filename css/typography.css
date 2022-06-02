@@ -123,7 +123,17 @@ h2 {
     font-weight: bold;
 }
 
-/* filter box */
+/* filter bar - mobile ver */
+#filter-contain-mobile {
+    font-size: 15px;
+    text-align: left;
+}
+
+#filter-contain-mobile .filter-title {
+    font-size: 20px;
+}
+
+/* filter box - desktop ver */
 .filter-contain {
     text-align: left;
 }

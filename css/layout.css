@@ -275,6 +275,7 @@ h2 {
 /* filter box */
 /* filter bar - mobile ver */
 .filter-contain-mobile {
+    display: none;
     width: 300px;
     position: fixed;
     top: 0;

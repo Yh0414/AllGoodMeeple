@@ -361,6 +361,10 @@ h2 {
     color: white;
 }
 
+.out-stock {
+    background-color: #B777FF;
+}
+
 .save-price {
     color: #80D49F;
 }

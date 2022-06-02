@@ -86,7 +86,7 @@ button {
 
 /* product_list page - mobile ver*/
 /* filter bar - mobile ver */
-#filter-contain-mobile {
+.filter-contain-mobile {
     z-index: 5;
     list-style: none;
 }

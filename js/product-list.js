@@ -1,9 +1,9 @@
-var filter_bar = document.getElementById("filter-contain-mobile");
+var filter_bar = document.getElementsByClassName("filter-contain-mobile");
 
-function showFilter() {
-    filter_bar.style.display = "block";
+function openFilter() {
+    filter_bar[0].style.display = "block";
 }
 
 function closeFilter() {
-    filter_bar.style.display = "none";
+    filter_bar[0].style.display = "none";
 }

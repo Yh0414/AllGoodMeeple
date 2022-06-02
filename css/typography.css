@@ -124,12 +124,12 @@ h2 {
 }
 
 /* filter bar - mobile ver */
-#filter-contain-mobile {
+.filter-contain-mobile {
     font-size: 15px;
     text-align: left;
 }
 
-#filter-contain-mobile .filter-title {
+.filter-contain-mobile .filter-title {
     font-size: 20px;
 }
 

@@ -196,7 +196,7 @@ h2 {
 
 /* filter box */
 /* filter - mobile ver */
-#filter-contain-mobile {
+.filter-contain-mobile {
     background-color: var(--colour-bg-header);
     color: white;
 }
@@ -206,17 +206,17 @@ h2 {
     background: none;
 }
 
-#filter-contain-mobile .filter-title {
+.filter-contain-mobile .filter-title {
     color: white;
 }
 
-#filter-contain-mobile .board-filter {
+.filter-contain-mobile .board-filter {
     color: orange;
 }
 
 /* filter - desktop ver */
 .filter-contain > li,
-#filter-contain-mobile > li{
+.filter-contain-mobile > li{
     border-bottom: 2px solid var(--colour-text);
 }
 

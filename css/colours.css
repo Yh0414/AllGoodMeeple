@@ -211,7 +211,7 @@ h2 {
 }
 
 .filter-contain-mobile .board-filter {
-    color: orange;
+    color: var(--colour-main);
 }
 
 /* filter - desktop ver */
@@ -393,7 +393,7 @@ h2 {
 }
 
 .num-cart-wish > button:hover {
-    background-color: #CE4A0E;
+    background-color: var(--colour-main-hover);
     transition: all 1s;
 }
 

@@ -618,7 +618,8 @@ h2 {
     box-shadow: 0px 3px 1px var(--colour-main);
 }
 
-.billing-detail span {
+.billing-detail span,
+.shipping-detail span {
     color: var(--colour-main-hover);
 }
 

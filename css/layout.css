@@ -606,12 +606,12 @@ h2 {
 }
 
 .cart-table-mobile {
-    width: 355px;
     margin: 40px auto 20px auto;
+    overflow: hidden;
 }
 
-.cart-table-mobile tbody tr {
-    padding-top: 10px;
+.cart-table-mobile tbody td {
+    padding: 2vw 5vw;
 }
 
 .product-cart-img {
@@ -644,7 +644,7 @@ h2 {
 
 /* cart totals table - mobile ver */
 .cart-total-title {
-    margin-left: 10px;
+    margin-left: 10vw;
 }
 
 .cart-total-table {
@@ -652,7 +652,7 @@ h2 {
 }
 
 .cart-total-table td {
-    padding: 20px;
+    padding: 2vw 3vw;
 }
 
 .cart-total-table img {

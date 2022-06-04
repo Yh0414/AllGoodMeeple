@@ -391,7 +391,7 @@ h2 {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    margin-left: 65px;
+    margin: 0 65px;
 }
 
 .function-bar > div {
@@ -1036,6 +1036,11 @@ h2 {
         grid-template-columns: 1fr 2fr;
     }
 
+    /* function bar */
+    .function-bar {
+        margin-right: 25px;
+    }
+    
     /* filter box */
     .filter-contain {
         display: block;

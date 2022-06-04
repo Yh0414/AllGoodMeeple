@@ -51,20 +51,13 @@ footer {
     overflow: hidden;
 }
 
-.footer-logo-mobile,
+.footer_logo_mobile {
+    width: 200px;
+    margin: 30px auto 0 auto;
+}
+
 .footer-logo-desktop {
-    margin: auto;
-    border-radius: 0;
-    background: none;
-}
-
-.footer-logo-mobile > img,
-.footer-logo-desktop > img {
-    margin-top: 20px;
-}
-
-.footer-logo-desktop > img {
-    margin-bottom: -100px;
+    display: none;
 }
 
 .info-container {
@@ -194,4 +187,16 @@ footer {
 .payment-method > img {
     width: 80px;
     height: 50px;
+}
+
+
+@media screen and (min-width:1750px ) {
+    .footer_logo_mobile {
+        display: none;
+    }
+    
+    .footer-logo-desktop {
+        display: block;
+        margin: 50px auto -80px auto;
+    }
 }
